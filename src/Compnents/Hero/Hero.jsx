@@ -16,14 +16,15 @@ const Hero = () => {
             md:text-6xl  font-bold text-purple"
             id="introheading"
           >
-            <span className="md:text-white">Th</span>e Most Secure way to Launch, Invest, and Audit Blockchain Projects
+            <span className="">Th</span>e Most Secure way to Launch, Invest, and
+            Audit Blockchain Projects
           </span>
           <span id="ptext" className="text-[24px] font-thin	 text-purple">
-          Your one stop shop. Our user-friendly interface provides 
-a smooth and easy process operable by even the most 
-novice of crypto users. All our functions can be implemented
-without writing a single line of code along with implementing
-the highest security against impostors.
+            Your one stop shop. Our user-friendly interface provides a smooth
+            and easy process operable by even the most novice of crypto users.
+            All our functions can be implemented without writing a single line
+            of code along with implementing the highest security against
+            impostors.
           </span>
           <button className="  bg-blue text-white font-bold  p-4 w-[12rem] rounded-2xl   ">
             View Docs

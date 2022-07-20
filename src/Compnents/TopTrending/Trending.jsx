@@ -3,6 +3,8 @@
 import React from "react";
 import "./Trending.css";
 import chart from "../../assets/chart.png";
+import chart2 from "../../assets/chart2.png";
+
 import t1 from "../../assets/1.png";
 import t2 from "../../assets/2.png";
 import t3 from "../../assets/3.png";
@@ -33,7 +35,7 @@ const Trending = () => {
             <tr className="border-b-[1px] border-lightBlue">
               <td className="p-4 flex items-center justify-center">
                 <img src={t1} alt={t1} className="scale-75" />
-                <span className="text-purple font-bold flex-0.5">Venify</span>
+                <span className="text-purple font-bold flex-0.5">HOLA</span>
               </td>
               <td className="p-4">534BNB </td>
               <td className="p-4 text-green ">4.65%</td>
@@ -51,12 +53,12 @@ const Trending = () => {
             <tr className="border-b-[1px] border-lightBlue">
               <td className="p-4 flex items-center justify-center">
                 <img src={t2} alt={t2} className="scale-75" />
-                <span className="text-purple font-bold flex-0.5">Venify</span>
+                <span className="text-purple font-bold flex-0.5">CTR</span>
               </td>
               <td className="p-4">534BNB </td>
               <td className="p-4 text-red ">4.65%</td>
               <td className="p-4 text-green ">
-                <img src={chart} alt={chart} />
+                <img src={chart2} alt={chart2} />
               </td>
 
               <td className="p-4">
@@ -69,7 +71,7 @@ const Trending = () => {
             <tr className="border-b-[1px] border-lightBlue">
               <td className="p-4 flex items-center justify-center">
                 <img src={t3} alt={t3} className="scale-75" />
-                <span className="text-purple font-bold flex-0.5">Venify</span>
+                <span className="text-purple font-bold flex-0.5">POLA</span>
               </td>
               <td className="p-4">534BNB </td>
               <td className="p-4 text-green  ">04.65%</td>

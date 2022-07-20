@@ -4,6 +4,7 @@ import React from "react";
 import part1 from "../../assets/p.png";
 import part2 from "../../assets/p2.png";
 import part3 from "../../assets/p3.png";
+import part4 from "../../assets/p4.png";
 
 import "./Partner.css";
 const Partner = () => {
@@ -22,7 +23,7 @@ const Partner = () => {
           <img src={part1} alt={part1} />
           <img src={part2} alt={part1} />
           <img src={part3} alt={part1} />
-          <img src={part1} alt={part1} />
+          <img src={part4} alt={part4} />
         </div>
       </div>
     </div>

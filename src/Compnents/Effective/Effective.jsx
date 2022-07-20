@@ -1,5 +1,8 @@
+/** @format */
+
 import React from "react";
 import "./Effective.css";
+import box from "../../assets/box.png";
 const Effective = () => {
   return (
     <section className="effective bg-cover">
@@ -9,7 +12,7 @@ const Effective = () => {
           <img
             className="object-cover object-center rounded"
             alt="hero"
-            src="https://dummyimage.com/720x600"
+            src={box}
           />
         </div>
         <div className="lg:flex-grow fkex-1 md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
