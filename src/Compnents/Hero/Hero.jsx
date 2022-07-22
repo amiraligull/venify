@@ -2,7 +2,6 @@
 
 import React from "react";
 import intro from "../../assets/hero1.png";
-import paragraph from "../paragraph/text";
 import "./Hero.css";
 
 const Hero = () => {

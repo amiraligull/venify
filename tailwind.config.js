@@ -34,6 +34,7 @@ module.exports = {
       green: "#13ce66",
       red: "#FF0000",
       black: "#222222",
+      inputcolor: "#D4D8E666",
     },
 
     extend: {},
