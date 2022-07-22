@@ -1,28 +1,23 @@
 /** @format */
 import "./App.css";
-import Navbar from "./Compnents/Navbar/Navbar";
-import Hero from "./Compnents/Hero/Hero";
-import Trending from "./Compnents/TopTrending/Trending";
-import Why from "./Compnents/why/Why";
-import Features from "./Compnents/Features/Features";
-import Partner from "./Compnents/Partners/Partner";
-import Start from "./Compnents/GetStarted/Start";
-import Effective from'./Compnents/Effective/Effective'
-import Newsletter from'./Compnents/Newsletter/Newsletter'
-import Footer from "./Compnents/Footer/Footer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home/Home";
+import CreatToken from "./pages/Create_Token/CreatToken";
+import Launchpad from "./pages/Launchpad/Launchpad";
+import Saving from "./pages/saving/Saving";
+import Presale from "./pages/Presale/Presale";
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Hero />
-      <Why />
-      <Trending />
-      <Features />
-      <Partner />
-      <Start />
-      <Effective/>
-      <Newsletter />
-      <Footer/>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="CreateToken/" element={<CreatToken />} />
+          <Route path="Saving/" element={<Saving />} />
+          <Route path="launchpad/" element={<Launchpad />} />
+          <Route path="presale/" element={<Presale />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

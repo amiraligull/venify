@@ -4,6 +4,7 @@ import React from "react";
 import icon1 from "../../assets/icon1.png";
 import icon2 from "../../assets/icon2.png";
 import icon3 from "../../assets/icon3.png";
+import { Link } from "react-router-dom";
 
 import "./Start.css";
 const Start = () => {
@@ -15,8 +16,8 @@ const Start = () => {
             Venify keeps things simple
           </h1>
           <p className="text-[20px] text-purple font-thin leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto ">
-          The most  complete suite of tools to create your project from the ground up with
-or without experience.
+            The most complete suite of tools to create your project from the
+            ground up with or without experience.
           </p>
         </div>
         <div className="flex flex-wrap  flex-col md:flex-row    sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
@@ -26,7 +27,7 @@ or without experience.
             </div>
             <div className="flex-grow">
               <h2 className="custhead text-[1.5rem] font-bold  text-purple text-lg  mb-3">
-                Connect wallet
+                <Link to="#">Connect wallet</Link>
               </h2>
               {/* <p className="leading-relaxed text-[20px] font-thin text-purple">
                 Sign up in website
@@ -39,7 +40,7 @@ or without experience.
             </div>
             <div className="flex-grow">
               <h2 className="custhead text-[1.5rem] font-bold  text-purple text-lg  mb-3">
-                Create Token
+                <Link to="#"> Create Token</Link>
               </h2>
               {/* <p className="leading-relaxed text-[20px] font-thin text-purple">
                 Verify your identity with one <br /> of our trusted verification
@@ -53,7 +54,7 @@ or without experience.
             </div>
             <div className="flex-grow">
               <h2 className="custhead text-[1.5rem] font-bold  text-purple text-lg  mb-3">
-                Launch
+                <Link to="#">Launch</Link>
               </h2>
               {/* <p className="leading-relaxed text-[20px] font-thin text-purple">
                 Buy, sell and swap <br /> digital assets 24/7
@@ -61,7 +62,6 @@ or without experience.
             </div>
           </div>
         </div>
-        
       </div>
     </section>
   );

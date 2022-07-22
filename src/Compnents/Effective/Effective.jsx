@@ -21,11 +21,11 @@ const Effective = () => {
             <br />
             Convenient.
           </h1>
-          <p className="mb-8 leading-relaxed text-[16px] font-thin text-gray">
+          {/* <p className="mb-8 leading-relaxed text-[16px] font-thin text-gray">
             Buy and sell 100+ cryptocurrencies with 20+ fiat currencies using
             bank transfers or your credit/debit card. Enjoy up to 8% back on all
             spending with your sleek, pure metal card.
-          </p>
+          </p> */}
           <div className="flex justify-center">
             <button className="inline-flex text-white bg-blue border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Start Now!

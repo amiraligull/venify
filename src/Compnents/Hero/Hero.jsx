@@ -2,6 +2,7 @@
 
 import React from "react";
 import intro from "../../assets/hero1.png";
+import paragraph from "../paragraph/text";
 import "./Hero.css";
 
 const Hero = () => {
@@ -26,8 +27,9 @@ const Hero = () => {
             of code along with implementing the highest security against
             impostors.
           </span>
+
           <button className="  bg-blue text-white font-bold  p-4 w-[12rem] rounded-2xl   ">
-            View Docs
+            About Us
           </button>
         </div>
         <div className="flex  items-center justify-center">

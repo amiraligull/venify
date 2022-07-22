@@ -3,6 +3,7 @@
 import React from "react";
 import logo from "../../assets/logo.png";
 import bsc from "../../assets/bsc.png";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="relative container mx-auto p-6">
@@ -10,25 +11,27 @@ const Navbar = () => {
         {/* logo */}
         <div className="p-2 flex items-center">
           <img src={logo} alt={logo} className="w-30" />
-          <span className=" text-2xl font-bold text-blue"> Venify</span>
+          <Link to="/">
+            <span className=" text-2xl font-bold text-blue"> Venify</span>
+          </Link>
         </div>
         {/* items */}
         <div className="hidden md:flex space-x-6">
-          <a href="#" className=" text-navblue font-semibold ">
+          <Link to="/CreateToken" className=" text-navblue font-semibold ">
             Create Token
-          </a>
-          <a href="#" className=" text-navblue font-semibold ">
+          </Link>
+          <Link to="/Launchpad" className=" text-navblue font-semibold ">
             Create Launchpad
-          </a>
-          <a href="#" className=" text-navblue font-semibold ">
+          </Link>
+          <Link to="/CreateToken" className=" text-navblue font-semibold ">
             Create Fairlaunch
-          </a>
-          <a href="#" className=" text-navblue  font-semibold">
+          </Link>
+          <Link to="/presale/" className=" text-navblue  font-semibold">
             Presale List
-          </a>
-          <a href="#" className=" text-navblue font-semibold ">
+          </Link>
+          <Link to="/Saving" className=" text-navblue font-semibold ">
             Venify Lock
-          </a>
+          </Link>
         </div>
         {/* button */}
         <div
@@ -36,9 +39,9 @@ const Navbar = () => {
          bg-lightBlue p-2 px-6 rounded-full  "
         >
           <img src={bsc} alt={bsc} className="scale-75" />
-          <a href="#">
+          <Link to="#">
             <span className="font-bold text-blue">Connect Wallet</span>
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
