@@ -4,7 +4,7 @@ import React from "react";
 import createtoken from "../../assets/createtoken.png";
 import mid from "../../assets/mid.png";
 import Input from "../Input/Input";
-const FromBox = () => {
+const TokenCreatBoxForm = () => {
   return (
     <section className=" px-10">
       <div className="bg-lightBlue p-10 rounded">
@@ -70,4 +70,4 @@ const FromBox = () => {
   );
 };
 
-export default FromBox;
+export default TokenCreatBoxForm;

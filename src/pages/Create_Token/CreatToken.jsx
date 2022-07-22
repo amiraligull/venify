@@ -8,7 +8,7 @@ import Footer from "../../Compnents/Footer/Footer";
 import heroimg from "../../assets/hero1.png";
 import GetSatarted from "../../Compnents/GetStarted/Start";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
-import FromBox from "../../Compnents/FromBox/FromBox";
+import TokenCreatBoxForm from "../../Compnents/TokenCreatBoxForm/TokenCreatBoxForm";
 const CreatToken = () => {
   return (
     <div className="createtoken">
@@ -20,7 +20,7 @@ const CreatToken = () => {
         image={heroimg}
       />
       <GetSatarted />
-      <FromBox />
+      <TokenCreatBoxForm />
       <Newsletter />
       <Footer />
     </div>
