@@ -5,8 +5,8 @@ import Input from "../Input/Input";
 import warning from "../../assets/warning.png";
 const LaunchpadForm = () => {
   return (
-    <section className=" px-10 ">
-      <div className="bg-lightBlue p-10 rounded">
+    <section className=" md:px-10 mb-10 ">
+      <div className="poolformbox bg-cover rounded-[30px]  shadow-lg  border border-blue p-10 ">
         <div className="text-center">
           <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple">
             Step 1

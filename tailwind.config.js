@@ -31,6 +31,7 @@ module.exports = {
       purple: "#130F49",
       orange: "#FF5E00",
       black: "#0F1C49",
+      dark: "#000000",
       green: "#13ce66",
       red: "#FF0000",
       black: "#222222",
@@ -39,5 +40,5 @@ module.exports = {
 
     extend: {},
   },
-  plugins: [],
+  plugins: [require("daisyui")],
 };

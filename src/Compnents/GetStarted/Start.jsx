@@ -12,7 +12,7 @@ const Start = () => {
     <section className="text-gray-600 body-font">
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20">
-          <h1 className="custhead sm:text-3xl text-[52px] font-[600] title-font text-purple mb-4">
+          <h1 className="GradientText custhead sm:text-3xl text-[52px] font-[600] title-font  mb-4">
             Venify keeps things simple
           </h1>
           <p className="text-[20px] text-purple font-thin leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto ">

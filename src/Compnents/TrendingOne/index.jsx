@@ -41,15 +41,15 @@ const Index = () => {
     },
   ];
   return (
-    <div className="top container   flex  items-center  rounded   mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2">
+    <div className="top container  overflow-hidden  flex  items-center  rounded   mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2">
       <span className="py-5 md:py-0 ">
         <img src={trending2} alt={trending2} />
       </span>
       <div className="trending  flex-1">
         <Marquee gradientColor={[235, 245, 255]} speed={70} className=" w-full">
-          {toptokens.map((token) => {
+          {toptokens.map((token, key) => {
             return (
-              <Link to="#">
+              <Link to="#" key={key}>
                 <span className="ml-5 font-thin text-[16px]">
                   {token.id} {token.name}
                 </span>

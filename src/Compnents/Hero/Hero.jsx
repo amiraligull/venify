@@ -7,12 +7,12 @@ import "./Hero.css";
 const Hero = () => {
   return (
     <div id="hero">
-      <div className="container flex  items-center mb-20 mt-10 px-[4rem] md:px-[4rem] md:mt-10  mx-auto flex-col-reverse md:flex-row">
+      <div className="container flex   items-center mb-20 mt-10 px-[2rem] md:px-[4rem] md:mt-10  mx-auto flex-col-reverse md:flex-row">
         {/* left */}
         <div className="flex flex-col  gap-8   mt-5 ">
           <span
             className=" 
-               text-5xl       
+               text-3xl       
             md:text-6xl  font-bold text-purple"
             id="introheading"
           >
