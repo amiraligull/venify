@@ -9,6 +9,7 @@ import CircleProgressbar from "../CircleProgressbar/CircleProgressbar";
 import Typography from "../Typeography/Typography";
 import Caps from "../Caps/Caps";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
@@ -32,12 +33,13 @@ const Card = () => {
           </div>
         </div>
         <div className="circle text-center flex flex-col gap-5">
-          <CircleProgressbar />
+          <CircleProgressbar percentage="70" />
           <Typography
             text="Sales End In"
             size="24px"
             weight="bold"
             color="purple"
+            custhead="custhead"
           />
           <Typography text="0:03:04:39" size="20px" weight="" color="blue" />
         </div>
@@ -48,7 +50,9 @@ const Card = () => {
             <Caps text="Liquidity %" heading="75%" />
             <Caps text="Lockup Time" heading="3650 days" />
           </div>
-          <Button text="View Pool" width="full" />
+          <Link to="Viewpool">
+            <Button text="View Pool" width="full" />
+          </Link>
         </div>
       </div>
     </div>

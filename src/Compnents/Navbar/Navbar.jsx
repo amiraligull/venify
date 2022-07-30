@@ -36,11 +36,11 @@ const Navbar = () => {
         {/* button */}
         <div
           className=" flex items-center justify-center
-         bg-lightBlue p-2 px-6 rounded-full  "
+         bg-lightBlue p-2 px-6 rounded-full shadow-lg  "
         >
           <img src={bsc} alt={bsc} className="scale-75" />
           <Link to="#">
-            <span className="font-bold text-blue">Connect Wallet</span>
+            <span className="font-medium text-blue">Connect Wallet</span>
           </Link>
         </div>
       </div>

@@ -19,7 +19,7 @@ const Hero = () => {
             <span className="">Th</span>e Most Secure way to Launch, Invest, and
             Audit Blockchain Projects
           </span>
-          <span id="ptext" className="text-[24px] font-thin	 text-purple">
+          <span id="ptext" className="text-[24px]  font-thin	 text-purple">
             Your one stop shop. Our user-friendly interface provides a smooth
             and easy process operable by even the most novice of crypto users.
             All our functions can be implemented without writing a single line
