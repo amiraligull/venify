@@ -27,7 +27,7 @@ const Navbar = () => {
             <Link to="/Launchpad" className=" text-navblue font-semibold ">
               Create Launchpad
             </Link>
-            <Link to="/CreateToken" className=" text-navblue font-semibold ">
+            <Link to="/FairLaunch" className=" text-navblue font-semibold ">
               Create Fairlaunch
             </Link>
             <Link to="/presale/" className=" text-navblue  font-semibold">
@@ -122,7 +122,7 @@ const Navbar = () => {
             </Link>
 
             <Link
-              to="Fairlaunch"
+              to="/FairLaunch"
               className="hover:text-black   text-blue block px-3 py-2  font-medium"
             >
               Create Fairlaunch

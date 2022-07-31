@@ -3,6 +3,7 @@
 import React from "react";
 import Input from "../Input/Input";
 import mid from "../../assets/form2.png";
+import Button from "../Button/Button";
 
 const LoackingForm = () => {
   return (
@@ -14,7 +15,7 @@ const LoackingForm = () => {
           </p>
         </div>
         <div className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center">
-          <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center  items-center text-center">
+          <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center mb-5  items-center text-center">
             <form action="#" className="flex flex-col  gap-10 text-left">
               <Input
                 label="Token or LP Token Address*"
@@ -32,9 +33,8 @@ const LoackingForm = () => {
                 <span className="text-purple font-medium text-[18px]">
                   You will Pay 0 BNB
                 </span>
-                <button className="bg-blue text-[white] text-[16px] font-thin p-2 rounded w-[10rem]">
-                  Submit
-                </button>
+
+                <Button width="[10rem]" weight="medium" text="Submit" />
               </div>
             </form>
           </div>

@@ -26,7 +26,7 @@ const Effective = () => {
                 className="w-full bg-opacity-50 border-none  rounded-full focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
               />
             </div>
-            <button className="inline-flex text-white text-[16px] font-thin bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg">
+            <button className="inline-flex text-white text-[16px] font-medium bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg">
               Subscribe
             </button>
           </div>

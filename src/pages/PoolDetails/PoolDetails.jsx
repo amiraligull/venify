@@ -14,6 +14,7 @@ import Button from "../../Compnents/Button/Button";
 import CircleProgressbar from "../../Compnents/CircleProgressbar/CircleProgressbar";
 import Caps from "../../Compnents/Caps/Caps";
 const PoolDetails = () => {
+  const style = { "--value": 70 };
   const toptokens = [
     {
       id: "#1",
@@ -142,7 +143,7 @@ const PoolDetails = () => {
               <br />
               {/* button with input */}
 
-              <Button text="View Pool" textsize="[16px]" />
+              <Button text="View Pool" weight="medium" textsize="[16px]" />
             </div>
           </div>
           {/* right area */}
@@ -172,7 +173,14 @@ const PoolDetails = () => {
               color="purple"
               custhead="custhead"
             />
-            <CircleProgressbar percentage="70" />
+            <CircleProgressbar
+              percentage="70"
+              color="green"
+              size="12rem"
+              textsize="[3rem]"
+              height="[195px]"
+              width="[195px]"
+            />
             <br />
             <Typography
               text="Sales End In"
@@ -211,6 +219,63 @@ const PoolDetails = () => {
               color="purple"
               custhead="custhead"
             />
+
+            <div className="states flex items-center justify-center gap-3">
+              <div className="circl flex flex-col items-center justify-center">
+                <CircleProgressbar
+                  percentage="70"
+                  bg="blue"
+                  color="white"
+                  borderColor="blue"
+                  size="7rem"
+                  textsize="[2rem]"
+                  height="[100px]"
+                  width="[100px]"
+                />
+                <span className="text-[16px]">Burnt</span>
+              </div>
+
+              <div className="circl flex flex-col items-center justify-center">
+                <CircleProgressbar
+                  percentage="100"
+                  bg="blue"
+                  color="white"
+                  borderColor="blue"
+                  size="7rem"
+                  textsize="[2rem]"
+                  height="[100px]"
+                  width="[100px]"
+                />
+                <span className="text-[16px]">Unlocked</span>
+              </div>
+
+              <div className="circl flex flex-col items-center justify-center">
+                <CircleProgressbar
+                  percentage="20"
+                  bg="blue"
+                  color="white"
+                  borderColor="blue"
+                  size="7rem"
+                  textsize="[2rem]"
+                  height="[100px]"
+                  width="[100px]"
+                />
+                <span className="text-[16px]">Presale</span>
+              </div>
+            </div>
+            <div className="circl flex flex-col items-center justify-center">
+              <CircleProgressbar
+                percentage="60"
+                bg="blue"
+                color="white"
+                borderColor="blue"
+                size="7rem"
+                textsize="[2rem]"
+                height="[100px]"
+                width="[100px]"
+              />
+              <span className="text-[16px]">Liquidity (%)</span>
+            </div>
           </div>
         </div>
       </section>

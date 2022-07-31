@@ -33,7 +33,14 @@ const Card = () => {
           </div>
         </div>
         <div className="circle text-center flex flex-col gap-5">
-          <CircleProgressbar percentage="70" />
+          <CircleProgressbar
+            percentage="70"
+            color="green"
+            size="12rem"
+            textsize="[3rem]"
+            height="[195px]"
+            width="[195px]"
+          />
           <Typography
             text="Sales End In"
             size="24px"
@@ -51,7 +58,7 @@ const Card = () => {
             <Caps text="Lockup Time" heading="3650 days" />
           </div>
           <Link to="Viewpool">
-            <Button text="View Pool" width="full" />
+            <Button text="View Pool" weight="medium" width="full" />
           </Link>
         </div>
       </div>

@@ -4,6 +4,7 @@ import React from "react";
 import createtoken from "../../assets/createtoken.png";
 import mid from "../../assets/form2.png";
 import Input from "../Input/Input";
+import Button from "../Button/Button";
 const TokenCreatBoxForm = () => {
   return (
     <section className=" md:px-10 mb-9">
@@ -24,19 +25,16 @@ const TokenCreatBoxForm = () => {
                 type="text"
                 placeholder="Enter your token type"
               />
-
               <Input
                 label="Name *"
                 type="text"
                 placeholder="Enter your token Name"
               />
-
               <Input
                 label="Symbol*"
                 type="text"
                 placeholder="Enter your token Symbol"
               />
-
               <Input
                 label="Decimals*"
                 type="number"
@@ -47,9 +45,8 @@ const TokenCreatBoxForm = () => {
                 type="number"
                 placeholder="Enter your token Total Supply"
               />
-              <button className="bg-blue text-[white] text-[20px] font-thin p-2 rounded w-[10rem]">
-                Create Token
-              </button>
+
+              <Button width="[10rem]" weight="medium" text="Create Token" />
             </form>
           </div>
           <div className="lg:max-w-lg flex-4 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">

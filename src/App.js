@@ -7,6 +7,7 @@ import Launchpad from "./pages/Launchpad/Launchpad";
 import Saving from "./pages/saving/Saving";
 import Presale from "./pages/Presale/Presale";
 import PoolDetails from "./pages/PoolDetails/PoolDetails";
+import FairLaunch from "./pages/FairLaunch/FairLaunch";
 function App() {
   return (
     <BrowserRouter>
@@ -18,6 +19,7 @@ function App() {
           <Route path="launchpad/" element={<Launchpad />} />
           <Route path="presale/" element={<Presale />} />
           <Route path="presale/Viewpool/" element={<PoolDetails />} />
+          <Route path="FairLaunch/" element={<FairLaunch />} />
         </Routes>
       </div>
     </BrowserRouter>

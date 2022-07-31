@@ -2,31 +2,36 @@
 
 import React from "react";
 import intro from "../../assets/hero1.png";
-import "./Hero.css";
+import Typography from "../Typeography/Typography";
+import Button from "../Button/Button";
 
 const Hero = () => {
   return (
-    <div id="hero">
-      <div className="container flex   items-center mb-20 mt-10 px-[2rem] md:px-[4rem] md:mt-10  mx-auto flex-col-reverse md:flex-row">
+    <div id="hero herobg">
+      <div className="container herobg bg-center bg-cover bg-no-repeat flex    items-center mb-20 mt-10 px-[2rem] md:px-[4rem] md:mt-10  mx-auto flex-col-reverse md:flex-row">
         {/* left */}
-        <div className="flex flex-col  gap-8   mt-5 ">
+        <div className="flex flex-col  gap-5   mt-5 ">
           <span
             className=" 
                text-[30px]      
             md:text-[60px]  font-bold text-purple"
             id="introheading"
           >
-            <span className="">Th</span>e Most Secure way to Launch, Invest, and
-            Audit Blockchain Projects
+            The Most Secure way to Launch, Invest, and Audit Blockchain Projects
           </span>
-          <span id="ptext" className="text-[24px]  font-thin	 text-purple">
-            Venify aims to be the premier IDO Launchpad for cryptocurrency
-            startups across all major blockchains.
-          </span>
-
-          <button className="  bg-blue text-white font-bold  p-4 w-[12rem] rounded-2xl   ">
-            About Us
-          </button>
+          <Typography
+            text="Venify aims to be the premier IDO Launchpad for cryptocurrency
+            startups across all major blockchains."
+            size="24px"
+            weight="thin"
+            color="purple"
+          />
+          <Button
+            text="About Us"
+            weight="medium"
+            width="[10rem]"
+            radius="[20px]"
+          />
         </div>
         <div className="flex  items-center justify-center">
           <img

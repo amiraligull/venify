@@ -6,7 +6,6 @@ import part2 from "../../assets/p2.png";
 import part3 from "../../assets/p3.png";
 import part4 from "../../assets/p4.png";
 
-import "./Partner.css";
 const Partner = () => {
   return (
     <div className="partner bg-cover">
@@ -19,7 +18,7 @@ const Partner = () => {
             We're partners with countless major organisations around the globe
           </span>
         </div>
-        <div className="flex flex-wrap -m-4 items-center justify-center text-center">
+        <div className="flex flex-wrap m-4 items-center justify-center text-center">
           <img src={part1} alt={part1} />
           <img src={part2} alt={part1} />
           <img src={part3} alt={part1} />

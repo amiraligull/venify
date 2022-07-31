@@ -2,7 +2,6 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import "./Footer.css";
 import logo from "../../assets/logo.png";
 import telegram from "../../assets/telegram.png";
 import Discord from "../../assets/Discord.png";
@@ -39,11 +38,21 @@ export default function Footer() {
         </nav>
 
         <div className="img flex flex-row">
-          <img src={telegram} alt={telegram} className="scale-75" />
-          <img src={Linkedin} alt={Linkedin} className="scale-75" />
-          <img src={Discord} alt={Discord} className="scale-75" />
-          <img src={twit} alt={twit} className="scale-75" />
-          <img src={insta} alt={insta} className="scale-75" />
+          <Link to="">
+            <img src={telegram} alt={telegram} className="scale-75 " />
+          </Link>
+          <Link to="">
+            <img src={Linkedin} alt={Linkedin} className="scale-75" />
+          </Link>
+          <Link to="">
+            <img src={Discord} alt={Discord} className="scale-75" />
+          </Link>
+          <Link to="">
+            <img src={twit} alt={twit} className="scale-75" />
+          </Link>
+          <Link to="">
+            <img src={insta} alt={insta} className="scale-75" />
+          </Link>
         </div>
       </div>
     </footer>

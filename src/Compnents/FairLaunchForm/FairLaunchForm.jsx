@@ -2,11 +2,10 @@
 
 import React from "react";
 import Input from "../Input/Input";
-import warning from "../../assets/warning.png";
 import Button from "../Button/Button";
 import { Link } from "react-router-dom";
 
-const LaunchpadForm = () => {
+const FairLaunchForm = () => {
   return (
     <section className=" md:px-10 mb-10 ">
       <div className="poolformbox bg-cover rounded-[30px]  shadow-xl  border border-blue p-10 ">
@@ -29,17 +28,8 @@ const LaunchpadForm = () => {
                 type="text"
                 placeholder="0x198a3e3cb0e3c761a03bdd4a8b382fc92e4b3945"
               />
-              <div className="flex text-center">
-                <div className="img">
-                  <img src={warning} alt={warning} />
-                </div>
-                <span className="text-blue">
-                  Make sure the token has 'Exclude transfer fee' function if it{" "}
-                  has transfer fees.
-                </span>
-              </div>
 
-              <Button text="Submit" width="[10rem]" weight="medium" />
+              <Button text="Approve" width="[10rem]" weight="medium" />
             </form>
           </div>
           <div className="lg:max-w-lg  flex-4 lg:w-full text-center md:w-1/2 w-5/6 mb-10 md:mb-0">
@@ -47,9 +37,9 @@ const LaunchpadForm = () => {
               <span className="font-bold custhead text-[14px] text-purple">
                 Create a pool fee: 0.0001 BNB
               </span>
-              {/* <button className="bg-blue text-[white] text-[16px] font-thin p-2 rounded w-[10rem]"></button> */}
-              <Link to="../CreateToken">
-                <Button width="[10rem]" weight="medium" text="Create Token" />
+
+              <Link to="../Launchpad">
+                <Button width="[10rem]" weight="medium" text="Create Pool" />
               </Link>
             </div>
           </div>
@@ -59,4 +49,4 @@ const LaunchpadForm = () => {
   );
 };
 
-export default LaunchpadForm;
+export default FairLaunchForm;
