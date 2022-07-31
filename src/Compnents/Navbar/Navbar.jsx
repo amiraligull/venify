@@ -16,7 +16,7 @@ const Navbar = () => {
           </Link>
         </div>
         {/* items */}
-        <div className="hidden md:flex space-x-6">
+        <div className="hidden  md:flex space-x-6">
           <Link to="/CreateToken" className=" text-navblue font-semibold ">
             Create Token
           </Link>

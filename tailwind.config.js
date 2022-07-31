@@ -7,12 +7,22 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
+      // sm: "640px",
+      // sm2: "540px",
+      // md: "768px",
+      // // tab: "768px",
+
+      // lg: "1024px",
+      // xl: "1280px",
+      // "2xl": "1536px",
       sm: "640px",
-      sm2: "540px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
-      "2xl": "1536px",
+      // => @media (min-width: 576px) { ... }
+
+      md: "1024px",
+      // => @media (min-width: 960px) { ... }
+
+      lg: "1280px",
+      // => @media (min-width: 1440px) { ... }
     },
     colors: {
       // body background
