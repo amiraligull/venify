@@ -15,7 +15,7 @@ const Presale = () => {
       <Navbar />
       <TrendingOne />
       <HeadSection
-        text="Lets’s Get Started"
+        text="Let’s Get Started!"
         heading="Presale List"
         image={heroimg}
       />

@@ -14,8 +14,8 @@ export default function Saving() {
       <Navbar />
       <TrendingOne />
       <HeadSection
-        text="Lets’s Get Started"
-        heading="Create Vlock"
+        text="Let’s Get Started!"
+        heading="Create V-Lock"
         image={heroimg}
       />
       <br /> <br />

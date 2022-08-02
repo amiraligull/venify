@@ -2,13 +2,20 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/logo.png";
-import telegram from "../../assets/telegram.png";
-import Discord from "../../assets/Discord.png";
-import Linkedin from "../../assets/Linkedin.png";
-import twit from "../../assets/twit.png";
-import insta from "../../assets/insta.png";
-
+import { logo, telegram, Discord, Linkedin, twit, insta } from "../LoadImages";
+const links = [
+  { title: "Contact Us", url: "#" },
+  { title: "About Us", url: "#" },
+  { title: "KYC & Audit", url: "#" },
+  { title: "Doc", url: "#" },
+];
+const images = [
+  { img: telegram, url: "#" },
+  { img: Discord, url: "#" },
+  { img: Linkedin, url: "#" },
+  { img: twit, url: "#" },
+  { img: insta, url: "#" },
+];
 export default function Footer() {
   return (
     <footer className="text-gray-600 body-font">
@@ -23,36 +30,23 @@ export default function Footer() {
           </span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <Link to="#" className="mr-5 hover:text-gray-900">
-            Contact us
-          </Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">
-            About Us
-          </Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">
-            kYC & Audit
-          </Link>
-          <Link to="#" className="mr-5 hover:text-gray-900">
-            Doc
-          </Link>
+          {links.map((link) => {
+            return (
+              <Link to={link.url} className="mr-5 hover:text-gray-900">
+                {link.title}
+              </Link>
+            );
+          })}
         </nav>
 
         <div className="img flex flex-row">
-          <Link to="">
-            <img src={telegram} alt={telegram} className="scale-75 " />
-          </Link>
-          <Link to="">
-            <img src={Linkedin} alt={Linkedin} className="scale-75" />
-          </Link>
-          <Link to="">
-            <img src={Discord} alt={Discord} className="scale-75" />
-          </Link>
-          <Link to="">
-            <img src={twit} alt={twit} className="scale-75" />
-          </Link>
-          <Link to="">
-            <img src={insta} alt={insta} className="scale-75" />
-          </Link>
+          {images.map((img) => {
+            return (
+              <Link to={img.url}>
+                <img src={img.img} alt={img.img} className="scale-75 " />
+              </Link>
+            );
+          })}
         </div>
       </div>
     </footer>

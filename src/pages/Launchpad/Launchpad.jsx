@@ -16,7 +16,7 @@ const Launchpad = () => {
       <Navbar />
       <TrendingOne />
       <HeadSection
-        text="Lets’s Get Started"
+        text="Let’s Get Started!"
         heading="Create Pool"
         image={heroimg}
       />

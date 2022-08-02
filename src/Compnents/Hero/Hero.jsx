@@ -13,15 +13,15 @@ const Hero = () => {
         <div className="flex flex-col  gap-5   mt-5 ">
           <span
             className=" 
+            custhead
                text-[30px]      
-            md:text-[60px]  font-bold text-purple"
-            id="introheading"
+            md:text-[60px] leading-snug  font-bold text-purple"
           >
-            The Most Secure way to Launch, Invest, and Audit Blockchain Projects
+            Venify is the most secure way for you to launch, invest and audit
+            any blockchain project.
           </span>
           <Typography
-            text="Venify aims to be the premier IDO Launchpad for cryptocurrency
-            startups across all major blockchains."
+            text="Our platform aims to be the premier IDO Launchpad for any cryptocurrency startups throughout all of the major blockchains."
             size="24px"
             weight="thin"
             color="purple"
@@ -41,10 +41,6 @@ const Hero = () => {
           />
         </div>
       </div>
-      {/* <div className=" blue1  bg-blue shadow-2xl  hidden md:flex"></div>
-      <div className=" blue2  bg-purple shadow-2xl  hidden md:flex"></div>
-      <div className=" blue3  bg-orange shadow-2xl  hidden md:flex"></div>
-      <div className=" blue4  bg-blue shadow-2xl  hidden md:flex"></div> */}
     </div>
   );
 };

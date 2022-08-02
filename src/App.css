@@ -92,3 +92,31 @@
 }
 
 /* ending hero sections csss  */
+
+/* effecitet section */
+.effective {
+  background-image: url("./assets/partner.png");
+}
+
+/* newsleter */
+.newsletter {
+  background-image: url("./assets/bgnews.png");
+}
+
+/* toptrending tabel */
+#tending {
+  background-image: url("./assets/trending.png");
+}
+
+.tabel {
+  width: 100%;
+  text-align: center;
+}
+th {
+  color: gray;
+  font-weight: 100;
+}
+td {
+  color: #130f49;
+  font-weight: 400;
+}

@@ -1,8 +1,8 @@
 /** @format */
 
 import React from "react";
-import why from "../../assets/why.png";
-
+import { why } from "../LoadImages";
+import Typography from "../Typeography/Typography";
 const Why = () => {
   return (
     <div className="Why">
@@ -17,14 +17,12 @@ const Why = () => {
           </div>
 
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            {/* <h1 className="title-font sm:text-4xl text-[48px] mb-4 font-medium text-purple">
-              Why you need
-              <br className="hidden lg:inline-block" />
-              To Choos Venify
-            </h1> */}
-            <p className="mb-8 leading-relaxed text-[24px] font-thin	 text-purple">
-            We rise above the competition with modernized and customizable smart contracts, tighter anti-scam measures, and the integration of the Pitch marketing agency into our platform.
-            </p>
+            <Typography
+              size="24px"
+              weight="thin"
+              color="purple"
+              text=" We aim to rise abogue our competition by making modernized and customizable smart contracts. We’ll offer tighter anti-scam measures, and integration of the Pitch marketing agency will be part of our platform."
+            />
           </div>
         </div>
       </section>

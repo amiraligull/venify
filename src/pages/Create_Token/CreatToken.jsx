@@ -15,7 +15,7 @@ const CreatToken = () => {
       <Navbar />
       <TrendingOne />
       <HeadSection
-        text="Lets’s Get Started"
+        text="Let’s Get Started!"
         heading="Create Token"
         image={heroimg}
       />

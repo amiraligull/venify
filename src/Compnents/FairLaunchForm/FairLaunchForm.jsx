@@ -24,7 +24,7 @@ const FairLaunchForm = () => {
               className="flex flex-col items-center  gap-10 text-left"
             >
               <Input
-                label="Enter your token address and verify"
+                label="Please, enter your token address, press Approve, and it will be verified."
                 type="text"
                 placeholder="0x198a3e3cb0e3c761a03bdd4a8b382fc92e4b3945"
               />

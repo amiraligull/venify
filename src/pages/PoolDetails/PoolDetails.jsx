@@ -14,7 +14,6 @@ import Button from "../../Compnents/Button/Button";
 import CircleProgressbar from "../../Compnents/CircleProgressbar/CircleProgressbar";
 import Caps from "../../Compnents/Caps/Caps";
 const PoolDetails = () => {
-  const style = { "--value": 70 };
   const toptokens = [
     {
       id: "#1",

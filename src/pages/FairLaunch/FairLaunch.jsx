@@ -15,8 +15,8 @@ const FairLaunch = () => {
       <Navbar />
       <TrendingOne />
       <HeadSection
-        text="Lets’s Get Started"
-        heading="Create Fair Launch"
+        text="Let’s Get Started!"
+        heading="Create Fairlaunch"
         image={heroimg}
       />
       <GetStarted />

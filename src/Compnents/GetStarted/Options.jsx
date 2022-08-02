@@ -1,0 +1,20 @@
+/** @format */
+
+import React from "react";
+import { Link } from "react-router-dom";
+const Options = ({ img, title }) => {
+  return (
+    <div className="p-4 md:w-1/3 flex flex-col text-center items-center">
+      <div className="w-50 h-50  inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
+        <img src={img} alt={img} />
+      </div>
+      <div className="flex-grow">
+        <h2 className="custhead text-[1.5rem] font-bold  text-purple text-lg  mb-3">
+          <Link to="#">{title}</Link>
+        </h2>
+      </div>
+    </div>
+  );
+};
+
+export default Options;

@@ -1,9 +1,8 @@
 /** @format */
 
 import React from "react";
-import "./Effective.css";
-import box from "../../assets/box.png";
 import Button from "../Button/Button";
+import { box } from "../LoadImages";
 const Effective = () => {
   return (
     <section className="effective bg-cover">
@@ -23,7 +22,7 @@ const Effective = () => {
             Convenient.
           </h1>
           <div className="flex justify-center">
-            <Button text="Start Now!" />
+            <Button text="Start Now!" width="[10rem]" weight="medium" />
           </div>
         </div>
       </div>

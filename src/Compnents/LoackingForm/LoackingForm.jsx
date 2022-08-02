@@ -24,7 +24,7 @@ const LoackingForm = () => {
               />
               <Input label="Amount*" type="text" placeholder="Enter amount" />
               <Input
-                label="Lock until (UTCw Time Zone)*"
+                label="Lock until (UTC Time Zone)*"
                 type="date"
                 placeholder="date"
               />

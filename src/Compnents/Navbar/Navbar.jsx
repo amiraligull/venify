@@ -6,6 +6,14 @@ import bsc from "../../assets/bsc.png";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 
+const Options = [
+  { title: "Create Token", Url: "/CreateToken" },
+  { title: "Create Launchpad", Url: "/Launchpad" },
+  { title: "Create Fairlaunch", Url: "/FairLaunch" },
+  { title: "  Presale List", Url: "/presale" },
+  { title: " V-Lock", Url: "/Saving" },
+];
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   return (
@@ -21,21 +29,13 @@ const Navbar = () => {
           </div>
           {/* items */}
           <div className="hidden md:flex space-x-6">
-            <Link to="/CreateToken" className=" text-navblue font-semibold ">
-              Create Token
-            </Link>
-            <Link to="/Launchpad" className=" text-navblue font-semibold ">
-              Create Launchpad
-            </Link>
-            <Link to="/FairLaunch" className=" text-navblue font-semibold ">
-              Create Fairlaunch
-            </Link>
-            <Link to="/presale/" className=" text-navblue  font-semibold">
-              Presale List
-            </Link>
-            <Link to="/Saving" className=" text-navblue font-semibold ">
-              Venify Lock
-            </Link>
+            {Options.map((option) => {
+              return (
+                <Link to={option.Url} className=" text-navblue font-semibold ">
+                  {option.title}
+                </Link>
+              );
+            })}
           </div>
           {/* button */}
           <div
@@ -107,40 +107,16 @@ const Navbar = () => {
       >
         <div className="md:hidden  px-3 pb-4" id="mobile-menu">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link
-              to="/CreateToken"
-              className="hover:text-black   text-blue block px-3 py-2  font-medium"
-            >
-              Create Token
-            </Link>
-
-            <Link
-              to="/Launchpad"
-              className="hover:text-black   text-blue block px-3 py-2  font-medium"
-            >
-              Create Launchpad
-            </Link>
-
-            <Link
-              to="/FairLaunch"
-              className="hover:text-black   text-blue block px-3 py-2  font-medium"
-            >
-              Create Fairlaunch
-            </Link>
-
-            <Link
-              to="/presale/"
-              className="hover:text-black   text-blue block px-3 py-2  font-medium"
-            >
-              Presale List
-            </Link>
-
-            <Link
-              to="/Saving"
-              className="hover:text-black   text-blue block px-3 py-2  font-medium"
-            >
-              Venify Lock
-            </Link>
+            {Options.map((option) => {
+              return (
+                <Link
+                  to={option.Url}
+                  className="hover:text-black   text-blue block px-3 py-2  font-medium"
+                >
+                  {option.title}
+                </Link>
+              );
+            })}
           </div>
           <div
             className="  flex items-center justify-center
