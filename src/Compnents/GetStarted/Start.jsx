@@ -12,7 +12,12 @@ const Start = () => {
     { img: icon3, title: "Launch" },
   ];
   return (
-    <section className="text-gray-600 body-font">
+    <section
+      className="text-gray-600 body-font"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1500"
+    >
       <div className="container px-5 py-24 mx-auto">
         <div className="text-center mb-20 xl:w-2/4 lg:w-3/4 mx-auto">
           <h1 className="GradientText custhead sm:text-3xl text-[52px] font-[600] title-font  mb-4">

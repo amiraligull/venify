@@ -11,8 +11,9 @@ export default function FeaturesBox({ image, title, text }) {
           <Typography
             text={title}
             color="purple"
-            size="24px"
+            size="1.5rem"
             custhead="custhead"
+            weight="bold"
           />
         </span>
         <Typography text={text} color="purple" size="20px" weight="thin" />

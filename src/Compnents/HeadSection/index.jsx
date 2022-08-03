@@ -3,7 +3,12 @@
 import React from "react";
 const Index = ({ text, heading, image }) => {
   return (
-    <div className="parent">
+    <div
+      className="parent"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <section className="bg-lightBlue mt-5">
         <br />
         <div className="container mx-auto flex px-5   md:flex-row flex-col-reverse items-center">

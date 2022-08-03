@@ -12,14 +12,19 @@ const Partner = () => {
     { image: part4 },
   ];
   return (
-    <div className="partner bg-cover">
+    <div
+      className="partner bg-cover"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div className="container px-5 py-24 mx-auto">
         <div className=" flex flex-col text-center">
           <Typography
             text="Some of our trusted partners"
             weight="medium"
             color="black"
-            size="28px"
+            size="30px"
             custhead="custhead"
           />
           <Typography

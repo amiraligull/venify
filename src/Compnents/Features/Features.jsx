@@ -2,7 +2,7 @@
 
 import React from "react";
 import FeaturesBox from "./FeaturesBox";
-import { mid2, statimg, earnImg, lockImg } from "../LoadImages";
+import { mid, statimg, earnImg, lockImg } from "../LoadImages";
 import "./Features.css";
 const Features = () => {
   const features = [
@@ -30,11 +30,19 @@ const Features = () => {
           <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img
               alt="feature"
-              className="object-cover object-center h-full w-full"
-              src={mid2}
+              className="object-cover object-center  w-full"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+              src={mid}
             />
           </div>
-          <div className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+          <div
+            className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center "
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             {features.map((feature) => {
               return (
                 <FeaturesBox

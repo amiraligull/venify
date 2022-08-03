@@ -7,7 +7,12 @@ const Effective = () => {
   return (
     <section className="newsletter bg-cover">
       <br />
-      <div className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center">
+      <div
+        className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div className="lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center">
           <Typography
             text="Subscribe to our newsletter"
@@ -40,9 +45,9 @@ const Effective = () => {
           </div>
           <br />
         </div>
-        <div className="lg:max-w-lg flex-4 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+        <div className="lg:max-w-lg flex-4 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
           <img
-            className="object-cover object-center rounded"
+            className="object-cover object-center "
             alt="hero"
             src={Newsimg}
           />

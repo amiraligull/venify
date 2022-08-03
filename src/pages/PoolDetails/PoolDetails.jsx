@@ -87,7 +87,12 @@ const PoolDetails = () => {
       <section className="text-gray-600 body-font">
         <div className="container px-5 py-24 mx-auto flex flex-wrap">
           <div className="sm:text-3xl text-2xl flex flex-col justify-center items-center text-gray-900 font-medium title-font mb-2 md:w-2/5">
-            <div className="heading text-center">
+            <div
+              className="heading text-center"
+              data-aos="fade-up"
+              data-aos-easing="linear"
+              data-aos-duration="1000"
+            >
               <Typography
                 text="Sales End In"
                 size="24px"
@@ -125,7 +130,7 @@ const PoolDetails = () => {
                 />
               </div>
               {/* button with input */}
-              <div className=" custborder flex w-auto md:justify-center justify-center items-center rounded-full p-1  overflow-hidden ">
+              <div className=" custborder flex w-auto md:justify-center justify-center items-center rounded-full p-1  overflow-hidden  shadow-lg">
                 <div className="relative mr-1 lg:w-full xl:w-[100%] w-[100%]">
                   <input
                     type="number"
@@ -146,11 +151,21 @@ const PoolDetails = () => {
             </div>
           </div>
           {/* right area */}
-          <div className="md:w-3/5 md:p-5   createTokenformbox bg-cover border-none rounded-[30px] shadow-xl">
+          <div
+            className="md:w-3/5 md:p-5   createTokenformbox bg-cover border-none rounded-[30px] shadow-xl"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <PoolDetaibox />
           </div>
 
-          <div className="md:w-3/5  w-full p-2  md:p-5 mt-4">
+          <div
+            className="md:w-3/5  w-full p-2  md:p-5 mt-4"
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             {toptokens.map((token, key) => {
               return (
                 <TokenBox
@@ -164,7 +179,12 @@ const PoolDetails = () => {
               );
             })}
           </div>
-          <div className="sm:text-3xl px-10 text-2xl  mt-9 flex flex-col justify-center items-center  mb-2 md:w-2/5">
+          <div
+            className="sm:text-3xl md:px-10 text-2xl  mt-9 flex flex-col justify-center items-center  mb-2 md:w-2/5  "
+            data-aos="fade-up"
+            data-aos-easing="linear"
+            data-aos-duration="1000"
+          >
             <Typography
               text="Pool Ended"
               size="24px"

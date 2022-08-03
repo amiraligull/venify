@@ -5,6 +5,7 @@ export { default as logo } from "../../assets/logo.png";
 export { default as intro } from "../../assets/hero1.png";
 // featrues sectoins
 export { default as mid2 } from "../../assets/mid2.png";
+export { default as mid } from "../../assets/mid.png";
 export { default as statimg } from "../../assets/stat.png";
 export { default as earnImg } from "../../assets/earn.png";
 export { default as lockImg } from "../../assets/lock.png";
@@ -38,3 +39,7 @@ export { default as Discord } from "../../assets/Discord.png";
 export { default as Linkedin } from "../../assets/Linkedin.png";
 export { default as twit } from "../../assets/twit.png";
 export { default as insta } from "../../assets/insta.png";
+
+// create token img
+
+// export { default as icon2 } from "../../assets/createtokenimg.png";

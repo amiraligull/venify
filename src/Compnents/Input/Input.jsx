@@ -11,7 +11,7 @@ const Input = ({ type, placeholder, label, name }) => {
       <input
         type={type}
         placeholder={placeholder}
-        className="md:w-[30rem]  w-[25rem] 
+        className="md:w-[30rem]  w-[20rem] 
                 p-2 rounded bg-inputcolor
                 border-none 
                 "

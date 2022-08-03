@@ -5,7 +5,12 @@ import Button from "../Button/Button";
 import { box } from "../LoadImages";
 const Effective = () => {
   return (
-    <section className="effective bg-cover">
+    <section
+      className="effective bg-cover"
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <br />
       <div className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center">
         <div className="lg:max-w-lg flex-4 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">

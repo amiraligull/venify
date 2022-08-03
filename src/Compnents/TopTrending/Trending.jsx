@@ -33,14 +33,17 @@ const Trending = () => {
   return (
     <div
       id="tending"
-      className=" bg-cover  mb-20  md:px-20 flex flex-col items-center justify-center overflow-hidden"
+      className=" bg-cover  mb-20  md:px-20 flex flex-col items-center justify-center "
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
     >
       <br />
       <br />
       <span className="text-[48px] text-black font-bold mb-10 mt-[5rem]">
         Top Trending
       </span>
-      <div className="tabelContainer  bg-white2  shadow-md rounded-xl w-full p-4">
+      <div className="tabelContainer  bg-white2  shadow-md rounded-xl w-full p-4  overflow-auto">
         <table className="tabel">
           <thead>
             <tr className="border-b-[1px] border-lightBlue">

@@ -7,7 +7,12 @@ import Button from "../Button/Button";
 
 const LoackingForm = () => {
   return (
-    <section className=" md:px-10 mb-10   ">
+    <section
+      className=" md:px-10 mb-10   "
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div className=" createVlockformbox bg-cover shadow-lg border border-blue   p-10 rounded-[30px]">
         <div className="text-center">
           <p className="custhead mb-8 leading-relaxed text-[30px] font-medium text-blue">

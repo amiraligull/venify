@@ -13,7 +13,12 @@ const Tabs = ({ title1, title2 }) => {
   const [openTab, setOpenTab] = React.useState(1);
   return (
     <>
-      <div className="flex flex-wrap">
+      <div
+        className="flex flex-wrap"
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div className="w-full">
           <div className="flex md:flex-row bg-lightBlue mt-10 border border-blue md:w-[20rem] mx-auto p-3 rounded-full justify-center items-center mb-[5rem]">
             <button
@@ -60,7 +65,7 @@ const Tabs = ({ title1, title2 }) => {
               <div className="tab-content tab-space">
                 <div className={openTab === 1 ? "block" : "hidden"} id="link1">
                   <div className="container md:px-14 py-15 mx-auto">
-                    <div className="flex  flex-wrap md:mx-10 -mb-10 ">
+                    <div className="flex  flex-wrap md:mx-10 -mb-10  ">
                       <Card />
                       <Card />
                       <Card />
@@ -70,7 +75,7 @@ const Tabs = ({ title1, title2 }) => {
                 </div>
                 <div className={openTab === 2 ? "block" : "hidden"} id="link2">
                   <div className="container md:px-14 py-15 mx-auto mb-20">
-                    <div className="flex flex-col gap-8  justify-center items-center   md:mx-10 -mb-10 ">
+                    <div className="flex flex-col gap-8  justify-center items-center   md:mx-10 -mb-10  ">
                       <img src={listnot} alt={listnot} />
                       <Typography
                         text="Watch our intro video to learn more about us"

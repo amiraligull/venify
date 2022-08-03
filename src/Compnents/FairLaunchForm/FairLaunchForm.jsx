@@ -7,7 +7,12 @@ import { Link } from "react-router-dom";
 
 const FairLaunchForm = () => {
   return (
-    <section className=" md:px-10 mb-10 ">
+    <section
+      className=" md:px-10 mb-10 "
+      data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="1000"
+    >
       <div className="poolformbox bg-cover rounded-[30px]  shadow-xl  border border-blue p-10 ">
         <div className="text-center">
           <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple">
