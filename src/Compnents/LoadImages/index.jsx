@@ -40,6 +40,6 @@ export { default as Linkedin } from "../../assets/Linkedin.png";
 export { default as twit } from "../../assets/twit.png";
 export { default as insta } from "../../assets/insta.png";
 
-// create token img
-
-// export { default as icon2 } from "../../assets/createtokenimg.png";
+// V-lock img
+export { default as vlock } from "../../assets/vlock.png";
+// export { default as vlock } from "../../assets/vlock.png";

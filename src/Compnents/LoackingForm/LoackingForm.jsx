@@ -2,7 +2,8 @@
 
 import React from "react";
 import Input from "../Input/Input";
-import mid from "../../assets/form2.png";
+// import mid from "../../assets/form2.png";
+import { vlock } from "../../Compnents/LoadImages";
 import Button from "../Button/Button";
 
 const LoackingForm = () => {
@@ -44,7 +45,7 @@ const LoackingForm = () => {
             </form>
           </div>
           <div className="lg:max-w-lg  flex-4 lg:w-full text-center md:w-1/2 w-5/6 mb-10 md:mb-0">
-            <img src={mid} alt={mid} />
+            <img src={vlock} alt={vlock} />
           </div>
         </div>
       </div>
