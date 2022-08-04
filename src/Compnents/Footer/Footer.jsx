@@ -10,6 +10,8 @@ import {
   Linkedin,
   twit,
   insta,
+  tiktok,
+  reddit,
 } from "../LoadImages";
 import LinkOptions from "./LinkOptions";
 const links = [
@@ -27,12 +29,12 @@ const links = [
 const images = [
   { img: telegram, ImgUrl: "#" },
   {
-    img: facebook,
+    img: tiktok,
     ImgUrl: "https://www.tiktok.com/@venifylp",
   },
 
   {
-    img: facebook,
+    img: reddit,
     ImgUrl: "https://www.reddit.com/user/Venify_Launchpad",
   },
 
