@@ -14,7 +14,10 @@ import {
 import LinkOptions from "./LinkOptions";
 const links = [
   { title: "Contact Us", url: "#" },
-  { title: "About Us", url: "#" },
+  {
+    title: "About Us",
+    url: "https://venify.gitbook.io/welcome-to-venify/1I4f1mgT4zIUc2I1KAOp/",
+  },
   { title: "KYC & Audit", url: "#" },
   {
     title: "Doc",
@@ -66,13 +69,7 @@ export default function Footer() {
         {/* images */}
         <div className="img flex flex-row">
           {images.map((img) => {
-            return (
-              <LinkOptions ImgUrl={img.ImgUrl} img={img.img} />
-
-              // <Link to={img.ImgUrl}>
-              //   <img src={img.img} alt={img.img} className="scale-75 " />
-              // </Link>
-            );
+            return <LinkOptions ImgUrl={img.ImgUrl} img={img.img} />;
           })}
         </div>
       </div>
