@@ -1,8 +1,10 @@
 /** @format */
 
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 import { box } from "../LoadImages";
+
 const Effective = () => {
   return (
     <section
@@ -27,7 +29,9 @@ const Effective = () => {
             Convenient.
           </h1>
           <div className="flex justify-center">
-            <Button text="Start Now!" width="[10rem]" weight="medium" />
+            <Link to="Launchpad">
+              <Button text="Start Now!" width="[10rem]" weight="medium" />
+            </Link>
           </div>
         </div>
       </div>

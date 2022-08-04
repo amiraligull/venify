@@ -35,6 +35,7 @@ export { default as Newsimg } from "../../assets/footer.png";
 
 // footer section
 export { default as telegram } from "../../assets/telegram.png";
+export { default as facebook } from "../../assets/facebook.png";
 export { default as Discord } from "../../assets/Discord.png";
 export { default as Linkedin } from "../../assets/Linkedin.png";
 export { default as twit } from "../../assets/twit.png";

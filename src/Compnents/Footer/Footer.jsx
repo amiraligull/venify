@@ -2,19 +2,48 @@
 
 import React from "react";
 import { Link } from "react-router-dom";
-import { logo, telegram, Discord, Linkedin, twit, insta } from "../LoadImages";
+import {
+  logo,
+  telegram,
+  facebook,
+  Discord,
+  Linkedin,
+  twit,
+  insta,
+} from "../LoadImages";
+import LinkOptions from "./LinkOptions";
 const links = [
   { title: "Contact Us", url: "#" },
   { title: "About Us", url: "#" },
   { title: "KYC & Audit", url: "#" },
-  { title: "Doc", url: "#" },
+  {
+    title: "Doc",
+    url: "https://venify.gitbook.io/welcome-to-venify/1I4f1mgT4zIUc2I1KAOp/",
+  },
 ];
 const images = [
-  { img: telegram, url: "#" },
-  { img: Discord, url: "#" },
-  { img: Linkedin, url: "#" },
-  { img: twit, url: "#" },
-  { img: insta, url: "#" },
+  { img: telegram, ImgUrl: "#" },
+  {
+    img: facebook,
+    ImgUrl: "https://www.tiktok.com/@venifylp",
+  },
+
+  {
+    img: facebook,
+    ImgUrl: "https://www.reddit.com/user/Venify_Launchpad",
+  },
+
+  {
+    img: facebook,
+    ImgUrl: "https://www.facebook.com/profile.php?id=100080640354496",
+  },
+  { img: Discord, ImgUrl: "https://discord.gg/SQgwM6eczW" },
+  {
+    img: Linkedin,
+    ImgUrl: "https://www.linkedin.com/in/venify-launchpad-22a763239/",
+  },
+  { img: twit, ImgUrl: "https://twitter.com/VenifyL" },
+  { img: insta, ImgUrl: "https://www.instagram.com/venifylp/" },
 ];
 export default function Footer() {
   return (
@@ -31,20 +60,18 @@ export default function Footer() {
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
           {links.map((link) => {
-            return (
-              <Link to={link.url} className="mr-5 hover:text-gray-900">
-                {link.title}
-              </Link>
-            );
+            return <LinkOptions url={link.url} title={link.title} />;
           })}
         </nav>
-
+        {/* images */}
         <div className="img flex flex-row">
           {images.map((img) => {
             return (
-              <Link to={img.url}>
-                <img src={img.img} alt={img.img} className="scale-75 " />
-              </Link>
+              <LinkOptions ImgUrl={img.ImgUrl} img={img.img} />
+
+              // <Link to={img.ImgUrl}>
+              //   <img src={img.img} alt={img.img} className="scale-75 " />
+              // </Link>
             );
           })}
         </div>

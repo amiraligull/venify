@@ -5,6 +5,7 @@ import logo from "../../assets/logo.png";
 import bsc from "../../assets/bsc.png";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
+import TopBanner from "../Advertisment/TopBanner";
 
 const Options = [
   { title: "Create Token", Url: "/CreateToken" },
@@ -129,6 +130,7 @@ const Navbar = () => {
           </div>
         </div>
       </Transition>
+      <TopBanner />
     </div>
   );
 };

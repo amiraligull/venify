@@ -68,6 +68,10 @@ body {
   background-image: url("./assets/bg3.png");
 }
 
+.whybg {
+  background-image: url("./assets/whybg.png");
+}
+
 #introheading {
   font-family: "League Spartan", sans-serif;
 }

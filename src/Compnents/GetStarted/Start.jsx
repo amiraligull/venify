@@ -7,9 +7,9 @@ import Options from "./Options";
 import "./Start.css";
 const Start = () => {
   const options = [
-    { img: icon1, title: "Connect wallet" },
-    { img: icon2, title: " Create Token" },
-    { img: icon3, title: "Launch" },
+    { img: icon1, title: "Connect wallet", url: "#" },
+    { img: icon2, title: " Create Token", url: "CreateToken" },
+    { img: icon3, title: "Launch", url: "Launchpad" },
   ];
   return (
     <section
@@ -34,7 +34,9 @@ const Start = () => {
         </div>
         <div className="flex flex-wrap  flex-col md:flex-row    sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
           {options.map((option) => {
-            return <Options img={option.img} title={option.title} />;
+            return (
+              <Options img={option.img} title={option.title} url={option.url} />
+            );
           })}
         </div>
       </div>

@@ -1,11 +1,12 @@
 /** @format */
 
 import React from "react";
-import intro from "../../assets/hero2.png";
+import intro from "../../assets/hero3.gif";
 import Typography from "../Typeography/Typography";
 import Button from "../Button/Button";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 AOS.init({ duration: 200 });
 
 const Hero = () => {
@@ -33,18 +34,28 @@ const Hero = () => {
             weight="thin"
             color="purple"
           />
-          <Button
-            text="About Us"
-            weight="medium"
-            width="[10rem]"
-            radius="[20px]"
-          />
+
+          <Link
+            to="#"
+            onClick={() =>
+              window.open(
+                "https://venify.gitbook.io/welcome-to-venify/1I4f1mgT4zIUc2I1KAOp/"
+              )
+            }
+          >
+            <Button
+              text="About Us"
+              weight="medium"
+              width="[10rem]"
+              radius="[20px]"
+            />
+          </Link>
         </div>
         <div className="flex  items-center justify-center ">
           <img
             src={intro}
             alt={intro}
-            className=" hidden md:flex floatinghero w-[15rem] mt-[-5rem] md:w-[100rem]  md:mt-[-150px] md:ml-[2rem] relative"
+            className=" hidden md:flex  w-[15rem] mt-[-5rem] md:w-[100rem] rounded-lg shadow-xl  md:mt-[10px] md:ml-[2rem] relative"
           />
         </div>
       </div>
