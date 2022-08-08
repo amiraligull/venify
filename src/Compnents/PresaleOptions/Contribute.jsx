@@ -6,6 +6,8 @@ import Typography from "../Typeography/Typography";
 import Button from "../Button/Button";
 import img from "../../assets/1.png";
 import Container from "../Layout/Container";
+import { Link } from "react-router-dom";
+
 const Contribute = ({ MyLock, MyContribut }) => {
   return (
     <>
@@ -57,7 +59,9 @@ const Contribute = ({ MyLock, MyContribut }) => {
               </div>
             </div>
 
-            <Button text="Back to Home" />
+            <Link to="/">
+              <Button text="Back to Home" />
+            </Link>
           </div>
         )}
       </Container>
