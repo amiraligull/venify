@@ -13,7 +13,7 @@ import PoolDetaibox from "../../Compnents/PoolDetaibox/PoolDetaibox";
 import Button from "../../Compnents/Button/Button";
 import CircleProgressbar from "../../Compnents/CircleProgressbar/CircleProgressbar";
 import Caps from "../../Compnents/Caps/Caps";
-import Graph from "../Graph/Graph";
+// import Graph from "../Graph/Graph";
 const PoolDetails = () => {
   const toptokens = [
     {
@@ -167,7 +167,7 @@ const PoolDetails = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            <Graph />
+            {/* <Graph /> */}
             {toptokens.map((token, key) => {
               return (
                 <TokenBox
