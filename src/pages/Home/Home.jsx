@@ -12,6 +12,7 @@ import Effective from "../../Compnents/Effective/Effective";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 import Footer from "../../Compnents/Footer/Footer";
 import TrendingOne from "../../Compnents/TrendingOne/index";
+import OurServices from "../../Compnents/OurServices/OurServices";
 const Home = () => {
   return (
     <div className="home">
@@ -21,6 +22,7 @@ const Home = () => {
       <Why />
       <Features />
       <Trending />
+      <OurServices />
       <Partner />
       <Start />
       <Effective />

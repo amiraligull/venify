@@ -1,8 +1,9 @@
 /** @format */
 // navbar
-export { default as logo } from "../../assets/logo.png";
+// export { default as logo } from "../../assets/logo2.png";
+export { default as logo } from "../../assets/logo2.jpg";
 // hero section
-export { default as intro } from "../../assets/hero1.png";
+export { default as intro } from "../../assets/hero2.png";
 // featrues sectoins
 export { default as mid2 } from "../../assets/mid2.png";
 export { default as mid } from "../../assets/mid.png";
@@ -10,7 +11,14 @@ export { default as statimg } from "../../assets/stat.png";
 export { default as earnImg } from "../../assets/earn.png";
 export { default as lockImg } from "../../assets/lock.png";
 // why section
-export { default as why } from "../../assets/why.png";
+export { default as why } from "../../assets/why.gif";
+
+// services
+export { default as ser1 } from "../../assets/ser1.png";
+export { default as ser2 } from "../../assets/ser2.png";
+export { default as ser3 } from "../../assets/ser3.png";
+export { default as ser4 } from "../../assets/ser4.png";
+
 // top trending marquee
 export { default as trending2 } from "../../assets/trending2.png";
 // top trending table

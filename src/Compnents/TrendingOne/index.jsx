@@ -41,7 +41,7 @@ const Index = () => {
     },
   ];
   return (
-    <div className="top container  overflow-hidden  flex  items-center  rounded   mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2">
+    <div className="top container  overflow-hidden  flex  items-center  rounded w-[98%]  shadow-lg  mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2">
       <span className="py-5 md:py-0 ">
         <img src={trending2} alt={trending2} />
       </span>
@@ -51,7 +51,8 @@ const Index = () => {
             return (
               <Link to="#" key={key}>
                 <span className="ml-5 font-thin text-[16px]">
-                  {token.id} {token.name}
+                  <span className="text-dark font-medium">{token.id} </span>
+                  <span className="text-blue font-medium">{token.name}</span>
                 </span>
               </Link>
             );

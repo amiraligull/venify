@@ -5,7 +5,8 @@ import Navbar from "../../Compnents/Navbar/Navbar";
 import TrendingOne from "../../Compnents/TrendingOne/index";
 import HeadSection from "../../Compnents/HeadSection/index";
 import Footer from "../../Compnents/Footer/Footer";
-import heroimg from "../../assets/hero1.png";
+import { intro } from "../../Compnents/LoadImages";
+
 import LaunchpadForm from "../../Compnents/LaunchpadForm/LaunchpadForm";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 
@@ -18,7 +19,7 @@ const Launchpad = () => {
       <HeadSection
         text="Let’s Get Started!"
         heading="Create Pool"
-        image={heroimg}
+        image={intro}
       />
       <GetStarted />
       <LaunchpadForm />

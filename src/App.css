@@ -149,3 +149,14 @@ td {
   color: #130f49;
   font-weight: 400;
 }
+
+/* charts */
+.chartContainer {
+  width: 100px;
+  height: 100px;
+  max-width: 120px;
+}
+.chartParent {
+  height: 100px !important;
+  overflow: "hidden";
+}

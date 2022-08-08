@@ -4,7 +4,7 @@ import React from "react";
 import topbanner from "../../assets/topbanner.gif";
 const TopBanner = () => {
   return (
-    <div className="  hidden md:flex  mx-auto banner text-center   h-[90px] w-[710px] mt-[-20px] mb-5">
+    <div className="   md:flex  mx-auto banner text-center   h-[90px] md:w-[710px] w-[90%] md:mt-[-20px] mb-5">
       <img
         src={topbanner}
         alt={topbanner}

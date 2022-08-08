@@ -1,7 +1,7 @@
 /** @format */
 
 import React, { useState } from "react";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.jpg";
 import bsc from "../../assets/bsc.png";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
@@ -23,10 +23,12 @@ const Navbar = () => {
         <div className="flex items-center justify-between">
           {/* logo */}
           <div className="p-2 flex items-center">
-            <img src={logo} alt={logo} className="w-30" />
             <Link to="/">
-              <span className=" text-2xl font-bold text-blue"> Venify</span>
+              <img src={logo} alt={logo} className="w-[180px]" />
             </Link>
+            {/* <Link to="/">
+              <span className=" text-2xl font-bold text-blue"> Venify</span>
+            </Link> */}
           </div>
           {/* items */}
           <div className="hidden md:flex space-x-6">

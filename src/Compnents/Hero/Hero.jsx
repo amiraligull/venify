@@ -1,7 +1,7 @@
 /** @format */
 
 import React from "react";
-import intro from "../../assets/hero3.gif";
+import intro from "../../assets/hero5.gif";
 import Typography from "../Typeography/Typography";
 import Button from "../Button/Button";
 import AOS from "aos";
@@ -51,11 +51,11 @@ const Hero = () => {
             />
           </Link>
         </div>
-        <div className="flex  items-center justify-center ">
+        <div className="flex  items-center justify-center  ">
           <img
             src={intro}
             alt={intro}
-            className=" hidden md:flex  w-[15rem] mt-[-5rem] md:w-[100rem] rounded-lg shadow-xl  md:mt-[10px] md:ml-[2rem] relative"
+            className=" hidden md:flex  w-[15rem] mt-[-5rem] md:w-[100rem] md:mt-[10px] md:ml-[2rem] relative"
           />
         </div>
       </div>

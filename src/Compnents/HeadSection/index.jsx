@@ -22,7 +22,7 @@ const Index = ({ text, heading, image }) => {
           </div>
           <div className="lg:max-w-lg flex-1 lg:w-full md:w-full  ">
             <img
-              className="object-cover object-center  w-[100%]"
+              className=" floatinghero object-cover object-center  w-[100%]"
               alt={image}
               src={image}
             />

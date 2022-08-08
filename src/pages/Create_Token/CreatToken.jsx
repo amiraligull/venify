@@ -5,7 +5,7 @@ import Navbar from "../../Compnents/Navbar/Navbar";
 import TrendingOne from "../../Compnents/TrendingOne/index";
 import HeadSection from "../../Compnents/HeadSection/index";
 import Footer from "../../Compnents/Footer/Footer";
-import heroimg from "../../assets/hero1.png";
+import { intro } from "../../Compnents/LoadImages";
 import GetSatarted from "../../Compnents/GetStarted/Start";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 import TokenCreatBoxForm from "../../Compnents/TokenCreatBoxForm/TokenCreatBoxForm";
@@ -17,7 +17,7 @@ const CreatToken = () => {
       <HeadSection
         text="Let’s Get Started!"
         heading="Create Token"
-        image={heroimg}
+        image={intro}
       />
       <GetSatarted />
       <TokenCreatBoxForm />

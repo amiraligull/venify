@@ -59,8 +59,7 @@ export default function Footer() {
           className="flex  title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
           <span className="ml-3  flex">
-            <img src={logo} alt={logo} />
-            <span className=" text-2xl font-bold text-blue"> Venify</span>
+            <img src={logo} alt={logo} className="w-[180px]" />
           </span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

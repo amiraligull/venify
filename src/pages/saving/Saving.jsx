@@ -5,8 +5,8 @@ import Navbar from "../../Compnents/Navbar/Navbar";
 import TrendingOne from "../../Compnents/TrendingOne/index";
 import HeadSection from "../../Compnents/HeadSection/index";
 import Footer from "../../Compnents/Footer/Footer";
-import heroimg from "../../assets/hero1.png";
-import LoackingForm from "../../Compnents/LoackingForm/LoackingForm";
+import heroimg from "../../assets/hero2.png";
+import LoackingFormBox from "../../Compnents/LoackingFormBox/LoackingFormBox";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 export default function Saving() {
   return (
@@ -19,7 +19,7 @@ export default function Saving() {
         image={heroimg}
       />
       <br /> <br />
-      <LoackingForm />
+      <LoackingFormBox />
       <Newsletter />
       <Footer />
     </div>

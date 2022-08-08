@@ -5,7 +5,7 @@ import Navbar from "../../Compnents/Navbar/Navbar";
 import TrendingOne from "../../Compnents/TrendingOne/index";
 import HeadSection from "../../Compnents/HeadSection/index";
 import Footer from "../../Compnents/Footer/Footer";
-import heroimg from "../../assets/hero1.png";
+import { intro } from "../../Compnents/LoadImages";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 import Tabs from "../../Compnents/Tabs/Tabs";
 // import BG from "../../assets/bg.png";
@@ -17,7 +17,7 @@ const Presale = () => {
       <HeadSection
         text="Let’s Get Started!"
         heading="Presale List"
-        image={heroimg}
+        image={intro}
       />
       <Tabs title1="All Tokens" title2="My Contributions" />
       <Newsletter />

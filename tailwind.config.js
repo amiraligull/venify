@@ -42,6 +42,7 @@ module.exports = {
       orange: "#FF5E00",
       black: "#0F1C49",
       dark: "#000000",
+      slati: "#242A44",
       green: "#13ce66",
       red: "#FF0000",
       black: "#222222",
