@@ -54,3 +54,5 @@ export { default as insta } from "../../assets/insta.png";
 // V-lock img
 export { default as vlock } from "../../assets/vlock.png";
 // export { default as vlock } from "../../assets/vlock.png";
+// pool
+export { default as graph } from "../../assets/graph.jpg";

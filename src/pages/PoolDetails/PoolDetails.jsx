@@ -8,12 +8,12 @@ import Newsletter from "../../Compnents/Newsletter/Newsletter";
 import Typography from "../../Compnents/Typeography/Typography";
 import TimeBox from "../../Compnents/TimeBox/TimeBox";
 import TokenBox from "../../Compnents/TokenBox/TokenBox";
-
 import PoolDetaibox from "../../Compnents/PoolDetaibox/PoolDetaibox";
 import Button from "../../Compnents/Button/Button";
 import CircleProgressbar from "../../Compnents/CircleProgressbar/CircleProgressbar";
 import Caps from "../../Compnents/Caps/Caps";
-// import Graph from "../Graph/Graph";
+import { graph } from "../../Compnents/LoadImages";
+
 const PoolDetails = () => {
   const toptokens = [
     {
@@ -167,7 +167,11 @@ const PoolDetails = () => {
             data-aos-easing="linear"
             data-aos-duration="1000"
           >
-            {/* <Graph /> */}
+            <img
+              src={graph}
+              alt={graph}
+              className="rounded-lg shadow-xl mb-7"
+            />
             {toptokens.map((token, key) => {
               return (
                 <TokenBox
