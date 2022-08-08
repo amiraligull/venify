@@ -13,6 +13,7 @@ import Button from "../../Compnents/Button/Button";
 import CircleProgressbar from "../../Compnents/CircleProgressbar/CircleProgressbar";
 import Caps from "../../Compnents/Caps/Caps";
 import { graph } from "../../Compnents/LoadImages";
+import { PieChart } from "react-minimal-pie-chart";
 
 const PoolDetails = () => {
   const toptokens = [
@@ -79,6 +80,13 @@ const PoolDetails = () => {
       title1: "Your Contribution",
       title2: "0 BNB",
     },
+  ];
+
+  const data = [
+    { title: "Liquadity 30 %", value: 30, color: "#0066FF" },
+    { title: "Burnt 20%", value: 20, color: "#2128BD" },
+    { title: "Unlocked 25%", value: 25, color: "#130F49" },
+    { title: `Presale  25%`, value: 25, color: "#242A44" },
   ];
 
   return (
@@ -245,8 +253,25 @@ const PoolDetails = () => {
               custhead="custhead"
             />
 
-            <div className="states flex items-center justify-center gap-3">
-              <div className="circl flex flex-col items-center justify-center">
+            <div className=" text-[5px] text-white  p-10 border">
+              <PieChart
+                data={data}
+                label={({ dataEntry }) => dataEntry.title}
+                // label={({ dataEntry }) => dataEntry.value}
+                // labelStyle={(index) => ({
+                //   fill: data[index].color,
+                //   fontSize: "5px",
+                //   fontFamily: "sans-serif",
+                //   color: "white",
+                // })}
+                radius={50}
+                // labelPosition={50}
+                startAngle={180}
+                // lengthAngle={180}
+                // viewBoxSize={[100, 50]}
+              />
+
+              {/* <div className="circl flex flex-col items-center justify-center">
                 <CircleProgressbar
                   percentage="70"
                   bg="blue"
@@ -259,7 +284,6 @@ const PoolDetails = () => {
                 />
                 <span className="text-[16px]">Burnt</span>
               </div>
-
               <div className="circl flex flex-col items-center justify-center">
                 <CircleProgressbar
                   percentage="100"
@@ -273,7 +297,6 @@ const PoolDetails = () => {
                 />
                 <span className="text-[16px]">Unlocked</span>
               </div>
-
               <div className="circl flex flex-col items-center justify-center">
                 <CircleProgressbar
                   percentage="20"
@@ -286,9 +309,9 @@ const PoolDetails = () => {
                   width="[100px]"
                 />
                 <span className="text-[16px]">Presale</span>
-              </div>
+              </div> */}
             </div>
-            <div className="circl flex flex-col items-center justify-center">
+            {/* <div className="circl flex flex-col items-center justify-center">
               <CircleProgressbar
                 percentage="60"
                 bg="blue"
@@ -300,7 +323,7 @@ const PoolDetails = () => {
                 width="[100px]"
               />
               <span className="text-[16px]">Liquidity (%)</span>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
