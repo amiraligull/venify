@@ -25,17 +25,19 @@ const Hero = () => {
       data-aos="fade-up"
       data-aos-duration="1000"
     >
-      <div className="container mx-auto flex px-5 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow  md:w-1/2 gap-5  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          {/* <h1 className="title-font  custhead text-[3rem] mb-4 font-medium "></h1> */}
-          <Typography
-            text="  Venify is the most secure way for you to launch, invest and audit
-            any blockchain project."
+      <div className="container mx-auto flex px-5 md:flex-row flex-col-reverse items-center">
+        <div className="lg:flex-grow  md:w-1/2 gap-5  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb- md:mb-0 items-center text-center">
+          <h1 className=" custhead md:text-[3rem] text-[1.5rem] mb-4 font-thin text-purple  textindark ">
+            Venify is the most secure way for you to launch, invest and audit
+            any blockchain project.
+          </h1>
+          {/* <Typography
+            text=" "
             size="3rem"
             weight="thin"
             color="purple"
             custhead="custhead"
-          />
+          /> */}
 
           <Typography
             text="Our platform aims to be the premier IDO Launchpad for any cryptocurrency startups throughout all of the major blockchains."

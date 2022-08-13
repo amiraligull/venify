@@ -9,7 +9,7 @@ const Options = ({ img, title, url }) => {
         <img src={img} alt={img} />
       </div>
       <div className="flex-grow">
-        <h2 className="custhead text-[2rem] font-bold  text-purple   ">
+        <h2 className="custhead text-[2rem] font-bold  textindark  ">
           <Link to={url}>{title}</Link>
         </h2>
       </div>

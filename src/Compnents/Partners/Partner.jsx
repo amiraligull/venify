@@ -8,17 +8,17 @@ const Partner = () => {
   const images = [
     { image: part1 },
     { image: part2 },
-    { image: part3 },
     { image: part4 },
+    { image: part3 },
   ];
   return (
     <div
-      className="partner bg-cover"
+      className="partner  partnershadow"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 py-[30px] mx-auto">
         <div className=" flex flex-col text-center">
           <Typography
             text="Some of our trusted partners"
@@ -35,9 +35,11 @@ const Partner = () => {
             size="20px"
           />
         </div>
-        <div className="flex flex-wrap m-4 items-center justify-center text-center">
+        <div className="flex flex-wrap m-4 items-center justify-center gap-3 text-center">
           {images.map((img) => {
-            return <img src={img.image} alt={img.image} />;
+            return (
+              <img src={img.image} alt={img.image} className="partnerDark " />
+            );
           })}
         </div>
       </div>

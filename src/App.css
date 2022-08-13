@@ -4,9 +4,9 @@
 body {
   overflow-x: hidden;
 }
-.partner {
+/* .partner {
   background-image: url("./assets/partner.png");
-}
+} */
 
 .cushead {
   font-family: "League Spartan", sans-serif;
@@ -133,7 +133,7 @@ body {
 }
 
 /* toptrending tabel */
-#tending {
+.tendingbg {
   background-image: url("./assets/trending.png");
 }
 

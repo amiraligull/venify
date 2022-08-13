@@ -4,6 +4,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import {
   logo,
+  darklogo,
   telegram,
   facebook,
   Discord,
@@ -59,7 +60,12 @@ export default function Footer() {
           className="flex  title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
         >
           <span className="ml-3  flex">
-            <img src={logo} alt={logo} className="w-[180px]" />
+            <img src={logo} alt={logo} className=" whiteThemeLogo " />
+            <img
+              src={darklogo}
+              alt={darklogo}
+              className=" darkThemeLogo w-[180px]"
+            />
           </span>
         </Link>
         <nav className="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">

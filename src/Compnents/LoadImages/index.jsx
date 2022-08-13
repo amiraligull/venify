@@ -42,6 +42,8 @@ export { default as icon2 } from "../../assets/icon2.png";
 export { default as icon3 } from "../../assets/icon3.png";
 // effeciten section
 export { default as box } from "../../assets/box.png";
+export { default as effective } from "../../assets/effective.png";
+
 // newsLetter
 export { default as Newsimg } from "../../assets/footer.png";
 

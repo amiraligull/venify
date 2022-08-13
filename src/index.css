@@ -15,6 +15,14 @@
   .darkThemeLogo {
     @apply hidden w-[180px];
   }
+
+  .lightImage {
+    @apply inline object-cover object-center  !important;
+  }
+  .darkImage {
+    @apply hidden object-cover object-center  !important;
+  }
+
   .navlink {
     @apply text-navblue font-semibold;
   }
@@ -40,8 +48,30 @@
   .why {
     @apply mt-[-2rem] !important;
   }
-  /* dark theme styling  */
 
+  /* toptreding sectoin table */
+
+  .tabelContainer {
+    @apply bg-white2  shadow-md rounded-xl w-full p-4  overflow-auto;
+  }
+
+  .trendingParent {
+    @apply mb-20  md:px-20 flex flex-col items-center justify-center;
+  }
+
+  /* news letter  */
+  .subscribeBtn {
+    @apply inline-flex text-white text-[16px] font-medium bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
+  }
+
+  /* dark theme styling  */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
+  /* //////////////////////////////////// */
   /* theme change and nave */
   [data-theme="dark"] .navlink {
     @apply text-white font-semibold    !important;
@@ -59,6 +89,49 @@
     @apply inline w-[180px];
   }
 
+  /* effective section  */
+
+  /* partners section */
+  [data-theme="dark"] .partner {
+    background-image: url("./assets/darkeffective.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    width: 95%;
+    margin: auto;
+  }
+
+  [data-theme="dark"] .partnershadow {
+    @apply shadow-inner shadow-[cyan]    !important;
+  }
+  /* partner images */
+
+  [data-theme="dark"] .partnerDark {
+    @apply p-2  bg-[cyan] shadow-lg shadow-[cyan] rounded-lg     !important;
+  }
+
+  /* effecitet section */
+  [data-theme="dark"] .effective {
+    background-image: url("./assets/darkeffective.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    width: 95%;
+    margin: auto;
+  }
+
+  [data-theme="dark"] .effectiveshadow {
+    @apply shadow-inner shadow-[cyan]    !important;
+  }
+  [data-theme="dark"] .darkImage {
+    @apply inline object-cover object-center   !important;
+  }
+
+  [data-theme="dark"] .lightImg {
+    @apply hidden !important;
+  }
   /* topuptrending */
   [data-theme="dark"] .topUpTrending {
     @apply overflow-hidden  flex  items-center  rounded-[10px] w-[98%]  shadow-inner shadow-[cyan] mx-auto flex-col-reverse md:flex-row bg-slati p-2;
@@ -101,5 +174,44 @@
   /* why section */
   [data-theme="dark"] .why {
     @apply mt-[2rem] !important;
+  }
+
+  /* toptreding sectoin table */
+
+  [data-theme="dark"] .tendingbg {
+    background-image: url("./assets/herobg2.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px 50px 0px 0px;
+    /* width: 95%; */
+    /* margin: auto; */
+  }
+
+  [data-theme="dark"] .trendingParent {
+    @apply mb-20  md:px-20 flex flex-col items-center justify-center;
+  }
+
+  [data-theme="dark"] .tabelContainer {
+    @apply bg-slati  shadow-inner shadow-[darkcyan] rounded-xl w-full p-4  overflow-auto;
+  }
+
+  [data-theme="dark"] th {
+    color: white;
+    font-weight: 100;
+  }
+  [data-theme="dark"] td {
+    color: white;
+    font-weight: 400;
+  }
+
+  /* newsletter */
+  [data-theme="dark"] .newsletter {
+    /* background-image: url("./assets/bgnews.png"); */
+    background: #171717;
+  }
+
+  .subscribeBtn {
+    @apply inline-flex text-white text-[16px] font-medium bg-slati border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
   }
 }
