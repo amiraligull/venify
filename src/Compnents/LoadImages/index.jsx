@@ -2,6 +2,10 @@
 // navbar
 // export { default as logo } from "../../assets/logo2.png";
 export { default as logo } from "../../assets/logo2.jpg";
+export { default as darklogo } from "../../assets/darklogo.png";
+export { default as dark } from "../../assets/dark.png";
+export { default as light } from "../../assets/light.png";
+
 // hero section
 export { default as intro } from "../../assets/hero2.png";
 // featrues sectoins
@@ -11,7 +15,7 @@ export { default as statimg } from "../../assets/stat.png";
 export { default as earnImg } from "../../assets/earn.png";
 export { default as lockImg } from "../../assets/lock.png";
 // why section
-export { default as why } from "../../assets/why.gif";
+export { default as why } from "../../assets/why.png";
 
 // services
 export { default as ser1 } from "../../assets/ser1.png";

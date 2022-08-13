@@ -3,3 +3,103 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer base {
+  /* buttons */
+  .btn {
+    @apply text-white shadow-xl  bg-blue border-0  py-3 px-6 focus:outline-none  text-center    !important;
+  }
+
+  .whiteThemeLogo {
+    @apply w-[180px];
+  }
+  .darkThemeLogo {
+    @apply hidden w-[180px];
+  }
+  .navlink {
+    @apply text-navblue font-semibold;
+  }
+  .walletbutton {
+    @apply md:flex items-center justify-center bg-lightBlue p-2 px-6 rounded-full shadow-lg !important;
+  }
+  .darkbtn {
+    @apply text-red;
+  }
+  .lightbtn {
+    @apply hidden;
+  }
+
+  /* topUpTrending */
+  .topUpTrending {
+    @apply overflow-hidden  flex  items-center  rounded w-[98%]  shadow-lg  mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2;
+  }
+  .heroHeading {
+    @apply text-[30px]  md:text-[60px] leading-snug  font-bold text-purple;
+  }
+
+  /* why section */
+  .why {
+    @apply mt-[-2rem] !important;
+  }
+  /* dark theme styling  */
+
+  /* theme change and nave */
+  [data-theme="dark"] .navlink {
+    @apply text-white font-semibold    !important;
+  }
+  [data-theme="dark"] .walletbutton {
+    @apply md:flex items-center justify-center bg-slati p-2 px-6 rounded-full shadow-inner
+      shadow-[cyan]
+    !important;
+  }
+
+  [data-theme="dark"] .whiteThemeLogo {
+    @apply w-[180px] hidden;
+  }
+  [data-theme="dark"] .darkThemeLogo {
+    @apply inline w-[180px];
+  }
+
+  /* topuptrending */
+  [data-theme="dark"] .topUpTrending {
+    @apply overflow-hidden  flex  items-center  rounded-[10px] w-[98%]  shadow-inner shadow-[cyan] mx-auto flex-col-reverse md:flex-row bg-slati p-2;
+  }
+
+  [data-theme="dark"] span {
+    @apply text-white;
+  }
+  [data-theme="dark"] .darkbtn {
+    @apply text-blue hidden;
+  }
+  [data-theme="dark"] .lightbtn {
+    @apply inline;
+  }
+  /* hero */
+  [data-theme="dark"] .heroHeading {
+    @apply text-[30px]  md:text-[60px] leading-snug  font-bold text-white;
+  }
+
+  [data-theme="dark"] .btn {
+    @apply text-white   bg-slati shadow-[cyan] shadow-inner border-0  py-3 px-6 focus:outline-none  text-center    !important;
+  }
+
+  [data-theme="dark"] .herobggif {
+    background-image: url("./assets/herobg2.gif");
+    background-repeat: no-repeat;
+  }
+  [data-theme="dark"] .addShadow {
+    @apply bg-cover   shadow-[darkcyan] shadow-lg;
+  }
+
+  [data-theme="dark"] .home {
+    @apply bg-slati !important;
+  }
+
+  [data-theme="dark"] .textindark {
+    @apply text-white;
+  }
+
+  /* why section */
+  [data-theme="dark"] .why {
+    @apply mt-[2rem] !important;
+  }
+}

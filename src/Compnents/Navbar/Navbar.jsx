@@ -1,11 +1,14 @@
 /** @format */
 
 import React, { useState } from "react";
-import logo from "../../assets/logo2.jpg";
+// import logo from "../../assets/logo2.jpg";
+import { logo, darklogo, dark, light } from "../LoadImages";
 import bsc from "../../assets/bsc.png";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import TopBanner from "../Advertisment/TopBanner";
+import { useEffect } from "react";
+import { themeChange } from "theme-change";
 
 const Options = [
   { title: "Create Token", Url: "/CreateToken" },
@@ -16,6 +19,10 @@ const Options = [
 ];
 
 const Navbar = () => {
+  useEffect(() => {
+    themeChange(false);
+    console.log(themeChange);
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="main">
@@ -24,27 +31,51 @@ const Navbar = () => {
           {/* logo */}
           <div className="p-2 flex items-center">
             <Link to="/">
-              <img src={logo} alt={logo} className="w-[180px]" />
+              <img src={logo} alt={logo} className=" whiteThemeLogo " />
+              <img
+                src={darklogo}
+                alt={darklogo}
+                className=" darkThemeLogo w-[180px]"
+              />
             </Link>
-            {/* <Link to="/">
-              <span className=" text-2xl font-bold text-blue"> Venify</span>
-            </Link> */}
           </div>
           {/* items */}
           <div className="hidden md:flex space-x-6">
             {Options.map((option) => {
               return (
-                <Link to={option.Url} className=" text-navblue font-semibold ">
+                <Link to={option.Url} className="navlink">
                   {option.title}
                 </Link>
               );
             })}
           </div>
           {/* button */}
-          <div
-            className=" hidden md:flex items-center justify-center
-         bg-lightBlue p-2 px-6 rounded-full shadow-lg  "
-          >
+
+          <div className="mode">
+            <button
+              className="darkbtn"
+              data-set-theme="dark"
+              data-act-class="ACTIVECLASS"
+            >
+              <img
+                src={dark}
+                alt={dark}
+                className="darkbtn w-[30px] rounded-full shadow-xl"
+              />
+            </button>
+            <button
+              className="lightbtn"
+              data-set-theme="light"
+              data-act-class="ACTIVECLASS"
+            >
+              <img
+                src={light}
+                alt={light}
+                className=" w-[30px] rounded-full shadow-xl"
+              />
+            </button>
+          </div>
+          <div className=" hidden walletbutton ">
             <img src={bsc} alt={bsc} className="scale-75" />
             <Link to="#">
               <span className="font-medium text-blue">Connect Wallet</span>

@@ -137,6 +137,10 @@ body {
   background-image: url("./assets/trending.png");
 }
 
+.topUpTrending {
+  /* box-shadow: 0px 0px 5px 2px #138aaa !important; */
+}
+
 .tabel {
   width: 100%;
   text-align: center;

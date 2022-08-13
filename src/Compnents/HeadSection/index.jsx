@@ -9,7 +9,7 @@ const Index = ({ text, heading, image }) => {
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <section className="bg-lightBlue mt-5">
+      <section className="bg-lightBlue  mt-5">
         <br />
         <div className="container mx-auto flex px-5   md:flex-row flex-col-reverse items-center">
           <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center  items-center text-center">

@@ -4,6 +4,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 import trending2 from "../../assets/trending2.png";
 import { Link } from "react-router-dom";
+import { transparent } from "daisyui/src/colors";
 
 const Index = () => {
   const toptokens = [
@@ -41,12 +42,12 @@ const Index = () => {
     },
   ];
   return (
-    <div className="top container  overflow-hidden  flex  items-center  rounded w-[98%]  shadow-lg  mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2">
+    <div className="topUpTrending container  ">
       <span className="py-5 md:py-0 ">
         <img src={trending2} alt={trending2} />
       </span>
       <div className="trending  flex-1">
-        <Marquee gradientColor={[235, 245, 255]} speed={70} className=" w-full">
+        <Marquee gradientColor={transparent} speed={70} className=" w-full">
           {toptokens.map((token, key) => {
             return (
               <Link to="#" key={key}>

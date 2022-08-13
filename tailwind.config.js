@@ -4,6 +4,7 @@
  */
 
 module.exports = {
+  darkMode: "class",
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
@@ -41,12 +42,16 @@ module.exports = {
       purple: "#130F49",
       orange: "#FF5E00",
       black: "#0F1C49",
-      dark: "#000000",
-      slati: "#242A44",
+      // dark: "#000000",
+      // slati: "#242A44",
+      slati: "#171717",
       green: "#13ce66",
       red: "#FF0000",
       black: "#222222",
       inputcolor: "#D4D8E666",
+    },
+    daisyui: {
+      themes: ["Light", "dark"],
     },
 
     extend: {},

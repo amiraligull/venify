@@ -15,10 +15,12 @@ import TrendingOne from "../../Compnents/TrendingOne/index";
 import OurServices from "../../Compnents/OurServices/OurServices";
 const Home = () => {
   return (
-    <div className="home">
-      <Navbar />
-      <TrendingOne />
-      <Hero />
+    <div className="home ">
+      <div className="herobggif  addShadow">
+        <Navbar />
+        <TrendingOne />
+        <Hero />
+      </div>
       <Why />
       <Features />
       <Trending />
