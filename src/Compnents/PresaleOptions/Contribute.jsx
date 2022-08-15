@@ -26,7 +26,7 @@ const Contribute = ({ MyLock, MyContribut }) => {
         {/* my lock section */}
         {MyLock && (
           <div className="flex flex-col gap-8   justify-center items-center  mt-10  md:mx-10 -mb-10  ">
-            <p className="custhead text-center  text-[30px] font-medium text-blue">
+            <p className="custhead text-center  text-[30px] font-medium text-blue textindark ">
               My Locks
             </p>
             <div class="p-3  md:w-2/3 flex md:flex-row flex-col items-center shadow-lg bg-slati  rounded-lg">

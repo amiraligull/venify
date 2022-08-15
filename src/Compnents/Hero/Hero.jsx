@@ -41,7 +41,7 @@ const Hero = () => {
 
           <Typography
             text="Our platform aims to be the premier IDO Launchpad for any cryptocurrency startups throughout all of the major blockchains."
-            size="20px"
+            size="1.5rem"
             weight="thin"
             color="purple"
           />

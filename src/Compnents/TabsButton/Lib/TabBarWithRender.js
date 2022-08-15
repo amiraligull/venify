@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import styled from "styled-components";
-
 export default function TabBarWithRender({ tabs }) {
   const [activeTab, setActiveTab] = useState(0);
 
@@ -55,7 +54,7 @@ const TabButton = styled.button`
   position: relative;
   transition: 0.6s;
   box-shadow: 0px 5px 17px -7px rgba(0, 0, 0, 0.65);
-  background: ${(props) => (props.active ? "#0066FF" : "#EBF5FF")};
+  background: ${(props) => (props.active ? "#0066FF" : "#171717")};
   &:focus {
     outline: none;
   }
@@ -65,6 +64,7 @@ const TabButton = styled.button`
     width: 100%;
   }
 `;
+
 const Title = styled.span`
   position: relative;
   display: flex;
@@ -80,7 +80,7 @@ const Title = styled.span`
     font-weight: bold;
   }
 
-  color: ${(props) => (props.active ? "white" : "#0066ff")};
+  color: ${(props) => (props.active ? "white" : "white")};
   transition: 0.6s;
 `;
 const Indicator = styled.span`

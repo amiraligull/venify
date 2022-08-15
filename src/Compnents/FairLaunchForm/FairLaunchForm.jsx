@@ -13,12 +13,12 @@ const FairLaunchForm = () => {
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <div className="poolformbox bg-cover rounded-[30px]  shadow-xl  border border-blue p-10 ">
+      <div className="createTokenformbox herobggif">
         <div className="text-center">
-          <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple">
+          <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple textindark">
             Step 1
           </h1>
-          <p className="custhead mb-8 leading-relaxed text-[30px] font-medium text-blue">
+          <p className="custhead mb-8 leading-relaxed text-[30px] font-medium text-blue textindark">
             Verify Your Token
           </p>
         </div>

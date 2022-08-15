@@ -90,7 +90,7 @@ const PoolDetails = () => {
   ];
 
   return (
-    <div className="Details">
+    <div className="poolDetails">
       <Navbar />
       <TrendingOne />
       <section className="text-gray-600 body-font">
@@ -123,7 +123,7 @@ const PoolDetails = () => {
                 title2="Max:20.0 BNB"
               />
 
-              <div className="text-left mt-2">
+              <div className="text-left mt-2 ">
                 <Typography
                   text="Amount"
                   size="16px"
@@ -149,9 +149,16 @@ const PoolDetails = () => {
                     className="w-full bg-opacity-50 border-none  rounded-full focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
                   />
                 </div>
-                <button className="inline-flex text-white text-[16px] font-thin bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg">
+                {/* <button className="inline-flex text-white text-[16px] font-thin bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg">
                   Maximum
-                </button>
+                </button> */}
+
+                <Button
+                  text="Maximum"
+                  weight="medium"
+                  textsize="[16px]"
+                  radius="30px"
+                />
               </div>
               <br />
               {/* button with input */}
@@ -161,7 +168,7 @@ const PoolDetails = () => {
           </div>
           {/* right area */}
           <div
-            className="md:w-3/5 md:p-5   createTokenformbox bg-cover border-none rounded-[30px] shadow-xl"
+            className="md:w-3/5 md:p-5   createTokenformbox herobggif createTokenformbox bg-cover border-none rounded-[30px] shadow-xl "
             data-aos="fade-up"
             data-aos-easing="linear"
             data-aos-duration="1000"
@@ -253,7 +260,7 @@ const PoolDetails = () => {
               custhead="custhead"
             />
 
-            <div className=" text-[5px] text-white  p-10 border">
+            <div className=" text-[5px] text-white  p-10 ">
               <PieChart
                 data={data}
                 label={({ dataEntry }) => dataEntry.title}
@@ -262,7 +269,7 @@ const PoolDetails = () => {
                 //   fill: data[index].color,
                 //   fontSize: "5px",
                 //   fontFamily: "sans-serif",
-                //   color: "white",
+                //   color: "red",
                 // })}
                 radius={50}
                 // labelPosition={50}
@@ -270,60 +277,7 @@ const PoolDetails = () => {
                 // lengthAngle={180}
                 // viewBoxSize={[100, 50]}
               />
-
-              {/* <div className="circl flex flex-col items-center justify-center">
-                <CircleProgressbar
-                  percentage="70"
-                  bg="blue"
-                  color="white"
-                  borderColor="blue"
-                  size="7rem"
-                  textsize="[2rem]"
-                  height="[100px]"
-                  width="[100px]"
-                />
-                <span className="text-[16px]">Burnt</span>
-              </div>
-              <div className="circl flex flex-col items-center justify-center">
-                <CircleProgressbar
-                  percentage="100"
-                  bg="blue"
-                  color="white"
-                  borderColor="blue"
-                  size="7rem"
-                  textsize="[2rem]"
-                  height="[100px]"
-                  width="[100px]"
-                />
-                <span className="text-[16px]">Unlocked</span>
-              </div>
-              <div className="circl flex flex-col items-center justify-center">
-                <CircleProgressbar
-                  percentage="20"
-                  bg="blue"
-                  color="white"
-                  borderColor="blue"
-                  size="7rem"
-                  textsize="[2rem]"
-                  height="[100px]"
-                  width="[100px]"
-                />
-                <span className="text-[16px]">Presale</span>
-              </div> */}
             </div>
-            {/* <div className="circl flex flex-col items-center justify-center">
-              <CircleProgressbar
-                percentage="60"
-                bg="blue"
-                color="white"
-                borderColor="blue"
-                size="7rem"
-                textsize="[2rem]"
-                height="[100px]"
-                width="[100px]"
-              />
-              <span className="text-[16px]">Liquidity (%)</span>
-            </div> */}
           </div>
         </div>
       </section>

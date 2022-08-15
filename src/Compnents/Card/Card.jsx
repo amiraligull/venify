@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 const Card = () => {
   return (
     <div className="md:w-1/2 w-full mb-10     p-3">
-      <div className="Cardbg  p-5  bg-cover py-5   border-none rounded-[30px] shadow-lg ">
+      <div className="Cardbg herobggif  p-5  bg-cover py-5   border-none rounded-[30px] shadow-lg ">
         <div className="cardtop flex justify-center items-center  ">
           <div className="left flex-1 ">
             <Typography
@@ -43,7 +43,7 @@ const Card = () => {
           />
           <Typography
             text="Sales End In"
-            size="24px"
+            size="2rem"
             weight="bold"
             color="purple"
             custhead="custhead"

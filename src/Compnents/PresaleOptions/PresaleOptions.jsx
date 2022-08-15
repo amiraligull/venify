@@ -4,9 +4,9 @@ import React from "react";
 
 const PresaleOptions = ({ image, text }) => {
   return (
-    <div className="option flex    w-[7rem] p-2 rounded-full bg-dark   ">
+    <div className="presalmenu">
       <img src={image} alt={image} className="object-contain scale-50" />
-      <span className="text-white text-[14px] ml-1">{text}</span>
+      <span className=" text-[14px] ml-1 textindark ">{text}</span>
     </div>
   );
 };

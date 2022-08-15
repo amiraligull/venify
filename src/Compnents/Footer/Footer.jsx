@@ -28,7 +28,7 @@ const links = [
   },
 ];
 const images = [
-  { img: telegram, ImgUrl: "#" },
+  { img: telegram, ImgUrl: "https://t.me/VenifyLP" },
   {
     img: tiktok,
     ImgUrl: "https://www.tiktok.com/@venifylp",

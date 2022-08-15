@@ -19,7 +19,12 @@ const TowColBox = ({ Image, Text }) => {
             <img className="img" alt="hero" src={Image} />
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <Typography size="20px" weight="thin" color="purple" text={Text} />
+            <Typography
+              size="1.5rem"
+              weight="thin"
+              color="purple"
+              text={Text}
+            />
           </div>
         </div>
       </Container>

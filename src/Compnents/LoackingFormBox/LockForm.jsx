@@ -8,7 +8,7 @@ import { vlock } from "../LoadImages";
 const LockForm = () => {
   return (
     <div className=" w-full py-7">
-      <p className="custhead text-center mb-8 leading-relaxed text-[30px] font-medium text-blue">
+      <p className="custhead text-center mb-8 leading-relaxed text-[30px] font-medium text-blue textindark ">
         Create Your Lock
       </p>
 

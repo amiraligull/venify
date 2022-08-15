@@ -8,7 +8,7 @@ import Button from "../Button/Button";
 const TokenCreatBoxForm = () => {
   return (
     <section className=" md:px-10 mb-9">
-      <div className="createTokenformbox bg-cover border border-blue  shadow-lg  p-10 rounded-[30px]">
+      <div className="createTokenformbox  herobggif ">
         <div className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center">
           <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center  items-center text-center">
             {/* <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple">

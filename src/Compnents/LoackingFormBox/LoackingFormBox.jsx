@@ -13,7 +13,7 @@ const LoackingForm = () => {
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <div className=" createVlockformbox bg-cover shadow-lg border border-blue    p-10 rounded-[30px]">
+      <div className="createTokenformbox herobggif ">
         <Tabsb
           LockType="LockType"
           tabname1="Create Your Lock"

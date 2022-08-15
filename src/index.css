@@ -64,6 +64,35 @@
     @apply inline-flex text-white text-[16px] font-medium bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
   }
 
+  /* create token page header section */
+  .headersection {
+    @apply bg-lightBlue  mt-5;
+  }
+
+  /* inputs styling and labels */
+  .InputStyle {
+    @apply md:w-[30rem]  w-[20rem] p-2 rounded bg-inputcolor border-none;
+  }
+
+  .LabelStyle {
+    @apply text-[20px] text-purple font-medium !important;
+  }
+  /* formbox bg */
+
+  .createTokenformbox {
+    @apply bg-cover border border-blue  shadow-lg  p-10 rounded-[30px];
+  }
+
+  /* pool details page */
+
+  .tokenBox {
+    @apply bg-lightBlue flex flex-row shadow-lg mb-5 md:w-full  w-full rounded-[10px] overflow-hidden;
+  }
+
+  .presalmenu {
+    @apply flex text-white  w-[7rem] p-2 rounded-full bg-slati;
+  }
+
   /* dark theme styling  */
   /* //////////////////////////////////// */
   /* //////////////////////////////////// */
@@ -213,5 +242,56 @@
 
   .subscribeBtn {
     @apply inline-flex text-white text-[16px] font-medium bg-slati border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
+  }
+  /* create token page  */
+  [data-theme="dark"] .createtoken {
+    @apply bg-slati;
+  }
+
+  [data-theme="dark"] .headersection {
+    @apply mt-5;
+  }
+
+  /* presale page */
+  [data-theme="dark"] .preslae {
+    @apply bg-slati;
+  }
+  /* vlock page */
+
+  [data-theme="dark"] .saving {
+    @apply bg-slati;
+  }
+
+  /* inputs styling and labels */
+  [data-theme="dark"] .InputStyle {
+    @apply md:w-[30rem]  w-[20rem] p-2 rounded bg-slati border-none shadow-inner shadow-[cyan];
+  }
+
+  [data-theme="dark"] .LabelStyle {
+    @apply text-[20px] text-white font-medium !important;
+  }
+  /* formbox bg */
+
+  [data-theme="dark"] .createTokenformbox {
+    @apply bg-cover   shadow-inner shadow-[cyan]  p-10 rounded-[30px];
+  }
+
+  /* pool details page */
+
+  [data-theme="dark"] .poolDetails {
+    @apply bg-slati;
+  }
+
+  [data-theme="dark"] .tokenBox {
+    @apply bg-slati flex flex-row shadow-inner shadow-[cyan] mb-5 md:w-full  w-full rounded-[10px] overflow-hidden;
+  }
+
+  [data-theme="dark"] .presalmenu {
+    @apply flex text-white  w-[7rem] p-2 rounded-full bg-slati shadow-inner shadow-[cyan];
+  }
+  /* presale cards */
+  [data-theme="dark"] .Cardbg {
+    /* background-color: url("./assets/card.png"); */
+    /* background-image: url("./assets/card.png"); */
   }
 }

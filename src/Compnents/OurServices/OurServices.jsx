@@ -13,7 +13,12 @@ const OurServices = () => {
       <br />
       <br />
 
-      <div className="   py-4 mx-auto mb-20 ">
+      <div
+        className="   py-4 mx-auto mb-20 "
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
         <div className="flex flex-wrap md:flex-row flex-col gap-3  items-center justify-center w-full  m-auto">
           {Services.map((service) => {
             return (
