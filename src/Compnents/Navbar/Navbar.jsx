@@ -153,7 +153,7 @@ const Navbar = () => {
             })}
           </div>
           <div
-            className="  flex items-center justify-center
+            className=" walletbutton  flex items-center justify-center
          bg-lightBlue p-2 px-6 rounded-full shadow-lg  "
           >
             <img src={bsc} alt={bsc} className="scale-75" />
