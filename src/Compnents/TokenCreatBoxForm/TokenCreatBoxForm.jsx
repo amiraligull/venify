@@ -11,14 +11,6 @@ const TokenCreatBoxForm = () => {
       <div className="createTokenformbox  herobggif ">
         <div className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center">
           <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center  items-center text-center">
-            {/* <h1 className=" cushead title-font md:text-[48px] text-[40px] mb-4 font-[700] text-purple">
-              Subscribe to our newsletter
-            </h1>
-            <p className="mb-8 leading-relaxed text-[16px] font-thin text-gray">
-              Get notification about tips, new product and exclusive promo news
-              just for you.
-            </p> */}
-
             <form action="#" className="flex flex-col  gap-10 text-left">
               <Input
                 label="Token"

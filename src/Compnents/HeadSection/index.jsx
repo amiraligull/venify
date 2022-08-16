@@ -1,5 +1,4 @@
 /** @format */
-
 import React from "react";
 const Index = ({ text, heading, image }) => {
   return (
@@ -11,21 +10,13 @@ const Index = ({ text, heading, image }) => {
     >
       <section className="headersection  partner">
         <br />
-        <div className="container mx-auto flex px-5   md:flex-row flex-col-reverse items-center">
-          <div className="lg:flex-grow fkex-1  md:w-1/2  flex flex-col md:items-center  items-center text-center">
-            <span className=" text-[3rem] font-thin text-lightwhit">
-              {text}
-            </span>
-            <span className=" cushead title-font md:text-[6rem] text-[40px] mb-4 font-[700] text-purple">
-              {heading}
-            </span>
+        <div className="hs-flexcontainer">
+          <div className="hs-left">
+            <span className="hs-text">{text}</span>
+            <span className=" hs-title">{heading}</span>
           </div>
-          <div className="lg:max-w-lg flex-1 lg:w-full md:w-full  ">
-            <img
-              className=" floatinghero object-cover object-center  w-[100%]"
-              alt={image}
-              src={image}
-            />
+          <div className="hs-right">
+            <img className="hs-image" alt={image} src={image} />
           </div>
         </div>
       </section>

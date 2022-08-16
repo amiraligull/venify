@@ -24,34 +24,32 @@ const Features = () => {
   ];
 
   return (
-    <div className="features  ">
-      <div className="container px-5   mx-auto flex flex-wrap">
-        <div className="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
-          <img
-            alt="feature"
-            className="object-cover object-center  w-full"
-            data-aos="fade-up"
-            data-aos-easing="linear"
-            data-aos-duration="1000"
-            src={mid}
-          />
-        </div>
-        <div
-          className="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center  "
+    <div className="f-Container">
+      <div className="f-ImageBox">
+        <img
+          alt="feature"
+          className="f-Image"
           data-aos="fade-up"
           data-aos-easing="linear"
           data-aos-duration="1000"
-        >
-          {features.map((feature) => {
-            return (
-              <FeaturesBox
-                image={feature.image}
-                title={feature.title}
-                text={feature.text}
-              />
-            );
-          })}
-        </div>
+          src={mid}
+        />
+      </div>
+      <div
+        className="f-TextBox  "
+        data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="1000"
+      >
+        {features.map((feature) => {
+          return (
+            <FeaturesBox
+              image={feature.image}
+              title={feature.title}
+              text={feature.text}
+            />
+          );
+        })}
       </div>
     </div>
   );

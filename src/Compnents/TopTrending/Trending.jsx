@@ -32,20 +32,18 @@ const values = [
 const Trending = () => {
   return (
     <div
-      className=" tendingbg  trendingParent "
+      className=" trendingParent "
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
       <br />
       <br />
-      <span className="text-[48px] text-black font-bold mb-10 mt-[5rem]">
-        Top Trending
-      </span>
+      <span className="t-heading">Top Trending</span>
       <div className="tabelContainer ">
         <table className="tabel">
           <thead>
-            <tr className="border-b-[1px] border-lightBlue">
+            <tr className="t-trStyleing">
               <th className="p-4">Currency</th>
               <th className="p-4">Milestone </th>
               <th className="p-4">24 HR Change</th>
@@ -53,10 +51,11 @@ const Trending = () => {
               <th className="p-4">Option</th>
             </tr>
           </thead>
-          <tbody className="divide-y divide-gray-300">
-            {values.map((value) => {
+          <tbody>
+            {values.map((value, key) => {
               return (
                 <TableBody
+                  key={key}
                   img={value.img}
                   name={value.name}
                   mileston={value.mileston}

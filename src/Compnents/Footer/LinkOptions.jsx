@@ -11,7 +11,7 @@ const LinkOptions = ({ url, title, img, ImgUrl }) => {
           to="#"
           onClick={() => window.open(url)}
           target="_blank"
-          className="mr-5 hover:text-gray-900"
+          className="mr-5 "
         >
           {title}
         </Link>

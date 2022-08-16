@@ -1,84 +1,54 @@
 /** @format */
 
 import React, { useState } from "react";
-// import logo from "../../assets/logo2.jpg";
-import { logo, darklogo, dark, light } from "../LoadImages";
-import bsc from "../../assets/bsc.png";
+import { logo, darklogo, dark, light, bsc } from "../LoadImages";
 import { Link } from "react-router-dom";
 import { Transition } from "@headlessui/react";
 import TopBanner from "../Advertisment/TopBanner";
 import { useEffect } from "react";
 import { themeChange } from "theme-change";
-
-const Options = [
-  { title: "Create Token", Url: "/CreateToken" },
-  { title: "Create Launchpad", Url: "/Launchpad" },
-  { title: "Create Fairlaunch", Url: "/FairLaunch" },
-  { title: "  Presale List", Url: "/presale" },
-  { title: " V-Lock", Url: "/Saving" },
-];
+import ModeChangeButton from "./ModeChangeButton";
+import Svg from "./Svg";
 
 const Navbar = () => {
+  const Options = [
+    { title: "Create Token", Url: "/CreateToken" },
+    { title: "Create Launchpad", Url: "/Launchpad" },
+    { title: "Create Fairlaunch", Url: "/FairLaunch" },
+    { title: "  Presale List", Url: "/presale" },
+    { title: " V-Lock", Url: "/Saving" },
+  ];
   useEffect(() => {
     themeChange(false);
-    console.log(themeChange);
   }, []);
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div className="main">
-      <nav className="relative container mx-auto p-6">
-        <div className="flex items-center justify-between">
+      <nav className="Nav-main">
+        <div className="Nav-Wrap-Items">
           {/* logo */}
-          <div className="p-2 flex items-center">
+          <div className="Nav-logo">
             <Link to="/">
               <img src={logo} alt={logo} className=" whiteThemeLogo " />
-              <img
-                src={darklogo}
-                alt={darklogo}
-                className=" darkThemeLogo w-[180px]"
-              />
+              <img src={darklogo} alt={darklogo} className=" darkThemeLogo" />
             </Link>
           </div>
           {/* items */}
-          <div className="hidden md:flex space-x-6">
-            {Options.map((option) => {
+          <div className="Nav-Items">
+            {Options.map((option, key) => {
               return (
-                <Link to={option.Url} className="navlink">
+                <Link to={option.Url} key={key} className="navlink">
                   {option.title}
                 </Link>
               );
             })}
           </div>
-          {/* button */}
-
-          <div className="mode">
-            <button
-              className="darkbtn"
-              data-set-theme="dark"
-              data-act-class="ACTIVECLASS"
-            >
-              <img
-                src={dark}
-                alt={dark}
-                className="darkbtn w-[30px] rounded-full shadow-xl"
-              />
-            </button>
-            <button
-              className="lightbtn"
-              data-set-theme="light"
-              data-act-class="ACTIVECLASS"
-            >
-              <img
-                src={light}
-                alt={light}
-                className=" w-[30px] rounded-full shadow-xl"
-              />
-            </button>
-          </div>
+          {/* theme change button */}
+          <ModeChangeButton dark={dark} light={light} />
           <div className=" hidden walletbutton ">
             <img src={bsc} alt={bsc} className="scale-75" />
             <Link to="#">
-              <span className="font-medium text-blue">Connect Wallet</span>
+              <span className="WalletText">Connect Wallet</span>
             </Link>
           </div>
 
@@ -86,43 +56,15 @@ const Navbar = () => {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-blue hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="Nav-BarBtn"
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               {!isOpen ? (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
-                </svg>
+                <Svg dimention="M4 6h16M4 12h16M4 18h16" />
               ) : (
-                <svg
-                  className="block h-6 w-6"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
-                </svg>
+                <Svg dimention="M6 18L18 6M6 6l12 12" />
               )}
             </button>
           </div>
@@ -139,26 +81,20 @@ const Navbar = () => {
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
       >
-        <div className="md:hidden  px-3 pb-4" id="mobile-menu">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            {Options.map((option) => {
+        <div className="Nav-Mobile">
+          <div className="MobileItems">
+            {Options.map((option, key) => {
               return (
-                <Link
-                  to={option.Url}
-                  className="hover:text-black   text-blue block px-3 py-2  font-medium"
-                >
+                <Link to={option.Url} key={key} className="MobileItemsLinks">
                   {option.title}
                 </Link>
               );
             })}
           </div>
-          <div
-            className=" walletbutton  flex items-center justify-center
-         bg-lightBlue p-2 px-6 rounded-full shadow-lg  "
-          >
+          <div className=" walletbutton  MobileWalletBtn">
             <img src={bsc} alt={bsc} className="scale-75" />
             <Link to="#">
-              <span className="font-medium text-blue">Connect Wallet</span>
+              <span className="WalletText">Connect Wallet</span>
             </Link>
           </div>
         </div>

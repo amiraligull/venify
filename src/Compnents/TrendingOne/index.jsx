@@ -2,10 +2,9 @@
 
 import React from "react";
 import Marquee from "react-fast-marquee";
-import trending2 from "../../assets/trending2.png";
+import { trending2 } from "../LoadImages";
 import { Link } from "react-router-dom";
 import { transparent } from "daisyui/src/colors";
-
 const Index = () => {
   const toptokens = [
     {
@@ -42,7 +41,7 @@ const Index = () => {
     },
   ];
   return (
-    <div className="topUpTrending container  ">
+    <div className="topUpTrending ">
       <span className="py-5 md:py-0 ">
         <img src={trending2} alt={trending2} />
       </span>
@@ -51,7 +50,7 @@ const Index = () => {
           {toptokens.map((token, key) => {
             return (
               <Link to="#" key={key}>
-                <span className="ml-5 font-thin text-[16px]">
+                <span className="ml-5">
                   <span className="text-dark font-medium">{token.id} </span>
                   <span className="text-blue font-medium">{token.name}</span>
                 </span>

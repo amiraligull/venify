@@ -4,6 +4,56 @@
 @tailwind components;
 @tailwind utilities;
 @layer base {
+  /* navbar */
+  @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Work+Sans:wght@100&display=swap");
+
+  .custhead {
+    font-family: "League Spartan", sans-serif;
+  }
+  .Nav-main {
+    @apply relative container mx-auto p-6   !important;
+  }
+  .Nav-Wrap-Items {
+    @apply flex items-center justify-between   !important;
+  }
+  .Nav-Wrap-Items {
+    @apply p-2 flex items-center   !important;
+  }
+
+  .Nav-Items {
+    @apply hidden md:flex space-x-6   !important;
+  }
+
+  .Nav-BarBtn {
+    @apply inline-flex items-center justify-center p-2 rounded-md  hover:text-blue  focus:outline-none focus:ring-2
+     focus:ring-offset-2 focus:ring-white;
+  }
+
+  .Nav-Mobile {
+    @apply md:hidden  px-3 pb-4   !important;
+  }
+
+  .MobileItems {
+    @apply px-2 pt-2 pb-3 space-y-1 sm:px-3   !important;
+  }
+
+  .MobileItemsLinks {
+    @apply hover:text-black   text-blue block px-3 py-2  font-medium   !important;
+  }
+
+  .MobileWalletBtn {
+    @apply flex items-center justify-center bg-lightBlue p-2 px-6 rounded-full shadow-lg   !important;
+  }
+
+  .WalletText {
+    @apply font-medium text-blue;
+  }
+
+  /* avertisment banner  */
+  .Ad-TopBanner {
+    @apply md:flex  mx-auto  text-center   h-[90px] md:w-[710px] w-[90%] md:mt-[-20px] mb-5   !important;
+  }
+
   /* buttons */
   .btn {
     @apply text-white shadow-xl  bg-blue border-0  py-3 px-6 focus:outline-none  text-center    !important;
@@ -40,28 +90,239 @@
   .topUpTrending {
     @apply overflow-hidden  flex  items-center  rounded w-[98%]  shadow-lg  mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2;
   }
+
+  /* Hero section */
   .heroHeading {
     @apply text-[30px]  md:text-[60px] leading-snug  font-bold text-purple;
+  }
+  .H-Container {
+    @apply container mx-auto flex px-5 md:flex-row flex-col-reverse items-center !important;
+  }
+  .H-Wrap {
+    @apply lg:flex-grow  md:w-1/2 gap-5  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left  md:mb-0 items-center text-center !important;
+  }
+
+  .H-heading {
+    @apply md:text-[3rem] text-[1.5rem] mb-4 font-thin text-purple  custhead textindark;
+  }
+
+  .h-ImageBox {
+    @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6;
+  }
+
+  .floatinghero {
+    animation-name: floatinghero;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    /* transition: all 2; */
+    /* margin-left: 30px; */
+    /* margin-top: 5px; */
+  }
+  .h-Image {
+    @apply object-fill floatinghero;
   }
 
   /* why section */
   .why {
     @apply mt-[-2rem] !important;
   }
+  .w-Container {
+    @apply container mx-auto flex px-5  md:flex-row flex-col items-center;
+  }
+  .w-imgBox {
+    @apply lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center;
+  }
+
+  .w-TextBox {
+    @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6;
+  }
+
+  /* Featuers Section */
+  .f-Container {
+    @apply container px-5   mx-auto flex flex-wrap;
+  }
+
+  .f-ImageBox {
+    @apply lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden;
+  }
+
+  .f-Image {
+    @apply object-cover object-center  w-full;
+  }
+  .f-TextBox {
+    @apply flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center;
+  }
+
+  .f-boxContainer {
+    @apply flex flex-col mb-10 lg:items-start items-center;
+  }
+  .f-boxItems {
+    @apply flex  items-center mb-3;
+  }
 
   /* toptreding sectoin table */
+  .tendingbg {
+    background-image: url("./assets/trending.png");
+  }
+
+  .trendingParent {
+    @apply mb-20 tendingbg md:px-20 flex flex-col items-center justify-center;
+  }
 
   .tabelContainer {
     @apply bg-white2  shadow-md rounded-xl w-full p-4  overflow-auto;
   }
+  /* tabel */
+  /* tabelbody using this classes divide-y divide-gray-300 */
+  .tabel {
+    width: 100%;
+    text-align: center;
+  }
+  th {
+    color: gray;
+    font-weight: 100;
+  }
+  td {
+    color: #130f49;
+    font-weight: 400;
+  }
 
-  .trendingParent {
-    @apply mb-20  md:px-20 flex flex-col items-center justify-center;
+  .t-heading {
+    @apply text-[48px] text-black font-bold mb-10 mt-[5rem];
+  }
+
+  .t-trStyleing {
+    @apply border-b-[1px] border-lightBlue;
+  }
+  .t-img-name {
+    @apply p-4 flex items-center justify-center;
+  }
+  .t-token-name {
+    @apply text-purple font-bold;
+  }
+
+  /* our services section  */
+  .s-container {
+    @apply bg-slati text-center md:py-[10rem]  pt-[8rem]  mt-[-10rem]  md:h-[95vh];
+  }
+  .sr-heading {
+    @apply text-[48px] text-white font-bold  mt-[5rem];
+  }
+  .sr-wrap {
+    @apply py-4 mx-auto mb-20;
+  }
+  .sr-imagesBox {
+    @apply flex flex-wrap md:flex-row flex-col gap-3  items-center justify-center w-full  m-auto !important;
+  }
+  .sr-images {
+    @apply w-[18rem] h-[20rem] rounded-[30px] shadow-2xl object-fill !important;
+  }
+
+  /* partners  section*/
+  .partner {
+    background-image: url("./assets/partner.png");
+  }
+  .p-container {
+    @apply container px-5 py-[30px] mx-auto !important;
+  }
+  .p-textbox {
+    @apply flex flex-col text-center;
+  }
+  .p-imagesbox {
+    @apply flex flex-wrap m-4 items-center justify-center gap-3 text-center;
+  }
+
+  /* get started section  */
+  .start-container {
+    @apply container px-5 py-24 mx-auto;
+  }
+  .start-textbox {
+    @apply text-center mb-20  lg:w-3/4 mx-auto;
+  }
+  .GradientText {
+    background: linear-gradient(
+      89.27deg,
+      #ffcb66 20%,
+      #bc2fca 30%,
+      #5a40fe 50%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
+  .start-heading {
+    @apply GradientText custhead sm:text-3xl text-[52px] font-[600]  mb-4;
+  }
+  .start-flexbox {
+    @apply flex flex-wrap  flex-col md:flex-row    sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6;
+  }
+  .start-flexcolbox {
+    @apply p-4 md:w-1/3 flex flex-col text-center items-center;
+  }
+  .start-image {
+    @apply inline-flex items-center justify-center rounded-full   flex-shrink-0;
+  }
+  .start-title {
+    @apply custhead text-[2rem] font-bold  textindark;
+  }
+
+  /* effective section  */
+  .effective {
+    background-image: url("./assets/partner.png");
+  }
+  .effectiveshadow {
+    @apply custhead  effective text-[2rem] font-bold  textindark;
+  }
+
+  .effect-container {
+    @apply container mx-auto flex px-5 py-5  md:flex-row flex-col items-center;
+  }
+
+  .effect-image {
+    @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0;
+  }
+  .effect-titlebox {
+    @apply lg:flex-grow  md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center;
+  }
+  .effect-title {
+    @apply custhead  sm:text-4xl text-[40px] mb-4 font-[700] textindark;
   }
 
   /* news letter  */
+  .newsletter {
+    background-image: url("./assets/bgnews.png");
+  }
+  .newsletterbg {
+    @apply newsletter bg-cover bg-no-repeat;
+  }
+  .news-container {
+    @apply container mx-auto flex px-5 py-5  md:flex-row flex-col items-center;
+  }
+  .news-flexcontainer {
+    @apply lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center;
+  }
+  .news-leftbox {
+    @apply flex  bg-white2  shadow-lg w-auto md:justify-center justify-center items-center rounded-full p-1  overflow-hidden;
+  }
+
+  .effect-input {
+    @apply relative mr-1 lg:w-full  w-[100%];
+  }
   .subscribeBtn {
     @apply inline-flex text-white text-[16px] font-medium bg-blue border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
+  }
+  .news-rightbox {
+    @apply lg:max-w-lg  lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0;
+  }
+
+  /* footer section */
+  .footer-flexcontainer {
+    @apply container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center;
+  }
+  .footer-links {
+    @apply md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center;
   }
 
   /* create token page header section */
@@ -69,26 +330,41 @@
     @apply bg-lightBlue  mt-5;
   }
 
+  .hs-flexcontainer {
+    @apply container mx-auto flex px-5   md:flex-row flex-col-reverse items-center;
+  }
+  .hs-left {
+    @apply lg:flex-grow md:w-1/2  flex flex-col md:items-center  items-center text-center;
+  }
+  .hs-text {
+    @apply text-[3rem] font-thin;
+  }
+  .hs-title {
+    @apply custhead  md:text-[6rem] text-[40px] mb-4 font-[700] text-purple;
+  }
+  .hs-right {
+    @apply lg:max-w-lg  lg:w-full md:w-full;
+  }
+  .hs-image {
+    @apply floatinghero object-cover object-center  w-[100%];
+  }
+
   /* inputs styling and labels */
   .InputStyle {
     @apply md:w-[30rem]  w-[20rem] p-2 rounded bg-inputcolor border-none;
   }
-
   .LabelStyle {
     @apply text-[20px] text-purple font-medium !important;
   }
   /* formbox bg */
-
   .createTokenformbox {
     @apply bg-cover border border-blue  shadow-lg  p-10 rounded-[30px];
   }
 
   /* pool details page */
-
   .tokenBox {
     @apply bg-lightBlue flex flex-row shadow-lg mb-5 md:w-full  w-full rounded-[10px] overflow-hidden;
   }
-
   .presalmenu {
     @apply flex text-white  w-[7rem] p-2 rounded-full bg-slati;
   }
@@ -117,9 +393,7 @@
   [data-theme="dark"] .darkThemeLogo {
     @apply inline w-[180px];
   }
-
   /* effective section  */
-
   /* partners section */
   [data-theme="dark"] .partner {
     background-image: url("./assets/darkeffective.gif");
@@ -132,7 +406,7 @@
   }
 
   [data-theme="dark"] .partnershadow {
-    @apply shadow-inner shadow-[cyan]    !important;
+    @apply shadow-inner shadow-[cyan]  !important;
   }
   /* partner images */
 

@@ -1,5 +1,4 @@
 /** @format */
-
 import React from "react";
 import { part1, part2, part3, part4 } from "../LoadImages";
 import Typography from "../Typeography/Typography";
@@ -18,8 +17,8 @@ const Partner = () => {
       data-aos-easing="linear"
       data-aos-duration="1000"
     >
-      <div className="container px-5 py-[30px] mx-auto">
-        <div className=" flex flex-col text-center">
+      <div className="p-container">
+        <div className="p-textbox">
           <Typography
             text="Some of our trusted partners"
             weight="medium"
@@ -35,10 +34,15 @@ const Partner = () => {
             size="20px"
           />
         </div>
-        <div className="flex flex-wrap m-4 items-center justify-center gap-3 text-center">
-          {images.map((img) => {
+        <div className="p-imagesbox">
+          {images.map((img, key) => {
             return (
-              <img src={img.image} alt={img.image} className="partnerDark " />
+              <img
+                src={img.image}
+                key={key}
+                alt={img.image}
+                className="partnerDark "
+              />
             );
           })}
         </div>

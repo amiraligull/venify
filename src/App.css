@@ -8,9 +8,9 @@ body {
   background-image: url("./assets/partner.png");
 } */
 
-.cushead {
+/* .cushead {
   font-family: "League Spartan", sans-serif;
-}
+} */
 /* pool */
 .poolformbox {
   background-image: url("./assets/form.png");
@@ -31,26 +31,26 @@ body {
   background-image: url("./assets/card.png");
 }
 
-.GradientText {
+/* .GradientText {
   background: linear-gradient(89.27deg, #ffcb66 20%, #bc2fca 30%, #5a40fe 50%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-}
+} */
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* hero sections csss  */
 
-.floatinghero {
+/* .floatinghero {
   animation-name: floatinghero;
   animation-duration: 2.5s;
   animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-  /* transition: all 2; */
-  /* margin-left: 30px; */
-  /* margin-top: 5px; */
-}
+  animation-timing-function: ease-in-out; */
+/* transition: all 2; */
+/* margin-left: 30px; */
+/* margin-top: 5px; */
+/* } */
 
 @keyframes floatinghero {
   0% {
@@ -123,25 +123,25 @@ body {
 /* ending hero sections csss  */
 
 /* effecitet section */
-.effective {
+/* .effective {
   background-image: url("./assets/partner.png");
-}
+} */
 
 /* newsleter */
-.newsletter {
+/* .newsletter {
   background-image: url("./assets/bgnews.png");
-}
+} */
 
 /* toptrending tabel */
-.tendingbg {
+/* .tendingbg {
   background-image: url("./assets/trending.png");
-}
+} */
 
 .topUpTrending {
   /* box-shadow: 0px 0px 5px 2px #138aaa !important; */
 }
 
-.tabel {
+/* .tabel {
   width: 100%;
   text-align: center;
 }
@@ -152,7 +152,7 @@ th {
 td {
   color: #130f49;
   font-weight: 400;
-}
+} */
 
 /* charts */
 .chartContainer {

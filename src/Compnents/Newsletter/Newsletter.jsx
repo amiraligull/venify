@@ -5,15 +5,15 @@ import { Newsimg } from "../LoadImages";
 import Typography from "../Typeography/Typography";
 const Effective = () => {
   return (
-    <section className="newsletter bg-cover">
+    <section className="newsletterbg">
       <br />
       <div
-        className="container mx-auto flex px-5 py-5  md:flex-row flex-col items-center"
+        className="news-container"
         data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="1000"
       >
-        <div className="lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center">
+        <div className="news-flexcontainer">
           <Typography
             text="Subscribe to our newsletter"
             size="48px"
@@ -29,8 +29,8 @@ const Effective = () => {
           />
           <br />
 
-          <div className="  flex  bg-white2  shadow-lg w-auto md:justify-center justify-center items-center rounded-full p-1  overflow-hidden ">
-            <div className="relative mr-1 lg:w-full xl:w-[100%] w-[100%]">
+          <div className=" news-leftbox">
+            <div className="effect-input">
               <input
                 type="text"
                 id="hero-field"
@@ -43,7 +43,7 @@ const Effective = () => {
           </div>
           <br />
         </div>
-        <div className="lg:max-w-lg flex-4 lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 ">
+        <div className="news-rightbox ">
           <img
             className="object-cover object-center "
             alt="hero"
