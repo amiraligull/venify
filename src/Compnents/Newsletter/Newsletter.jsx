@@ -16,17 +16,20 @@ const Effective = () => {
         <div className="news-flexcontainer">
           <Typography
             text="Subscribe to our newsletter"
-            size="48px"
+            size="30px"
             weight="medium"
             custhead="custhead"
             color="purple"
           />
-          <Typography
-            text="Subscribe and receive notifications on tips, new products and
+          <div>
+            <Typography
+              text="Subscribe and receive notifications on tips, new products and
             exclusive news just for you."
-            size="16px"
-            weight="thin"
-          />
+              size="14px"
+              weight="thin"
+            />
+          </div>
+
           <br />
 
           <div className=" news-leftbox">
@@ -36,7 +39,7 @@ const Effective = () => {
                 id="hero-field"
                 name="hero-field"
                 placeholder="Enter Your Email"
-                className="w-full bg-opacity-50 border-none  rounded-full focus:ring-2 focus:ring-indigo-200 focus:bg-transparent focus:border-indigo-500 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out "
+                className="leftpool-input"
               />
             </div>
             <button className="subscribeBtn">Subscribe</button>

@@ -1,7 +1,8 @@
 /** @format */
 
 import React from "react";
-import img from "../../assets/1.png";
+// import img from "../../assets/1.png";
+import { t1 } from "../LoadImages";
 import circle from "../../assets/circle.png";
 import PresaleOptions from "../PresaleOptions/PresaleOptions";
 import warning from "../../assets/warning.png";
@@ -13,26 +14,26 @@ import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
-    <div className="md:w-1/2 w-full mb-10     p-3">
-      <div className="Cardbg herobggif  p-5  bg-cover py-5   border-none rounded-[30px] shadow-lg ">
-        <div className="cardtop flex justify-center items-center  ">
-          <div className="left flex-1 ">
+    <div className="maincard">
+      <div className="Cardbg herobggif  cardrounds ">
+        <div className="cardtop">
+          <div className="card-left ">
             <Typography
               text="Khao Manee"
               size="28px"
               weight="bold"
               color="purple"
             />
-            <div className="options   flex flex-row gap-2">
+            <div className="cardoptions ">
               <PresaleOptions image={circle} text="Sale Live" />
               <PresaleOptions image={warning} text="No Audit" />
             </div>
           </div>
           <div className="right ">
-            <img src={img} alt={img} className="scale-105" />
+            <img src={t1} alt={t1} className="scale-105" />
           </div>
         </div>
-        <div className="circle text-center flex flex-col gap-5">
+        <div className="card-circle">
           <CircleProgressbar
             percentage="70"
             color="green"
@@ -50,8 +51,8 @@ const Card = () => {
           />
           <Typography text="0:03:04:39" size="20px" weight="" color="blue" />
         </div>
-        <div className="bottom  text-center ">
-          <div className="softcap flex flex-wrap gap-y-5 mb-10 ">
+        <div className="text-center ">
+          <div className="cardsoftcap  ">
             <Caps text="Soft Cap" heading="150.0 BNB" />
             <Caps text="Hard Cap" heading="300.0 BNB" />
             <Caps text="Liquidity %" heading="75%" />

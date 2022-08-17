@@ -1,10 +1,7 @@
 /** @format */
-
 import React from "react";
-
 import Card from "../Card/Card";
 import SearchBox from "../SearchBox/SearchBox";
-// import Container from "../Layout/Container";
 import Tabsb from "../TabsButton/Tabsb";
 import img from "../../assets/1.png";
 import Container from "../Layout/Container";

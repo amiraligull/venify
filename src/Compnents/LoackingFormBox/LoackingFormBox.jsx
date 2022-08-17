@@ -8,7 +8,7 @@ import Contribute from "../PresaleOptions/Contribute";
 const LoackingForm = () => {
   return (
     <section
-      className=" md:px-10 mb-10   "
+      className="tcf-container"
       data-aos="fade-up"
       data-aos-easing="linear"
       data-aos-duration="1000"

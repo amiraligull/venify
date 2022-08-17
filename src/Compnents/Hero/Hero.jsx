@@ -1,6 +1,6 @@
 /** @format */
 import React from "react";
-import intro from "../../assets/hero2.png";
+import { intro } from "../LoadImages";
 import Typography from "../Typeography/Typography";
 import Button from "../Button/Button";
 import AOS from "aos";
@@ -11,7 +11,7 @@ const Hero = () => {
   return (
     <div data-aos="fade-up" data-aos-duration="1000">
       <div className="H-Container">
-        <div className="H-Wrap">
+        <div className="H-Wrap text-[20px]">
           <h1 className="  H-heading   ">
             Venify is the most secure way for you to launch, invest and audit
             any blockchain project.

@@ -10,8 +10,8 @@ import warning from "../../assets/warning.png";
 const PoolDetaibox = () => {
   return (
     <div className="details">
-      <div className=" flex md:flex-row  flex-col justify-center items-center ">
-        <div className="left flex flex-1 items-center">
+      <div className="pool-detailflexbox">
+        <div className="pool-detailboxleft">
           <img src={img} alt={img} className="scale-75" />
           <Typography
             text="Khao Manee"
@@ -21,13 +21,13 @@ const PoolDetaibox = () => {
             custhead="custhead"
           />
         </div>
-        <div className="right flex flex-1  gap-2 justify-center items-center">
+        <div className="pool-detailboxright">
           <PresaleOptions image={circle} text="Sale Live" />
           <PresaleOptions image={circle} text="Fair Launch" />
           <PresaleOptions image={warning} text="No Audit" />
         </div>
       </div>
-      <div className="pl-5 md:py-0 py-5">
+      <div className="pool-detailtext">
         <Typography
           text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
                  standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type 

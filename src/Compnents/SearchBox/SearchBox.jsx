@@ -4,13 +4,13 @@ import React from "react";
 
 const SearchBox = () => {
   return (
-    <div className="card flex flex-row justify-center items-center">
+    <div className="ser-container">
       <input
         type="text"
         placeholder="Enter the token address"
-        className="p-3 border border-blue rounded-full w-[50%]"
+        className="ser-input"
       />
-      <select className="border border-blue rounded-full p-3  ml-1">
+      <select className="ser-select">
         <option value="">All Status</option>
       </select>
     </div>

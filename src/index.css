@@ -1,12 +1,10 @@
 /** @format */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 @layer base {
   /* navbar */
   @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Work+Sans:wght@100&display=swap");
-
   .custhead {
     font-family: "League Spartan", sans-serif;
   }
@@ -19,60 +17,48 @@
   .Nav-Wrap-Items {
     @apply p-2 flex items-center   !important;
   }
-
   .Nav-Items {
     @apply hidden md:flex space-x-6   !important;
   }
-
   .Nav-BarBtn {
     @apply inline-flex items-center justify-center p-2 rounded-md  hover:text-blue  focus:outline-none focus:ring-2
      focus:ring-offset-2 focus:ring-white;
   }
-
   .Nav-Mobile {
     @apply md:hidden  px-3 pb-4   !important;
   }
-
   .MobileItems {
     @apply px-2 pt-2 pb-3 space-y-1 sm:px-3   !important;
   }
-
   .MobileItemsLinks {
     @apply hover:text-black   text-blue block px-3 py-2  font-medium   !important;
   }
-
   .MobileWalletBtn {
     @apply flex items-center justify-center bg-lightBlue p-2 px-6 rounded-full shadow-lg   !important;
   }
-
   .WalletText {
     @apply font-medium text-blue;
   }
-
   /* avertisment banner  */
   .Ad-TopBanner {
     @apply md:flex  mx-auto  text-center   h-[90px] md:w-[710px] w-[90%] md:mt-[-20px] mb-5   !important;
   }
-
   /* buttons */
   .btn {
     @apply text-white shadow-xl  bg-blue border-0  py-3 px-6 focus:outline-none  text-center    !important;
   }
-
   .whiteThemeLogo {
     @apply w-[180px];
   }
   .darkThemeLogo {
     @apply hidden w-[180px];
   }
-
   .lightImage {
     @apply inline object-cover object-center  !important;
   }
   .darkImage {
     @apply hidden object-cover object-center  !important;
   }
-
   .navlink {
     @apply text-navblue font-semibold;
   }
@@ -85,12 +71,10 @@
   .lightbtn {
     @apply hidden;
   }
-
   /* topUpTrending */
   .topUpTrending {
     @apply overflow-hidden  flex  items-center  rounded w-[98%]  shadow-lg  mx-auto flex-col-reverse md:flex-row bg-lightBlue p-2;
   }
-
   /* Hero section */
   .heroHeading {
     @apply text-[30px]  md:text-[60px] leading-snug  font-bold text-purple;
@@ -101,15 +85,12 @@
   .H-Wrap {
     @apply lg:flex-grow  md:w-1/2 gap-5  lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left  md:mb-0 items-center text-center !important;
   }
-
   .H-heading {
     @apply md:text-[3rem] text-[1.5rem] mb-4 font-thin text-purple  custhead textindark;
   }
-
   .h-ImageBox {
     @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6;
   }
-
   .floatinghero {
     animation-name: floatinghero;
     animation-duration: 2.5s;
@@ -122,7 +103,6 @@
   .h-Image {
     @apply object-fill floatinghero;
   }
-
   /* why section */
   .why {
     @apply mt-[-2rem] !important;
@@ -133,43 +113,35 @@
   .w-imgBox {
     @apply lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-10 md:mb-0 items-center text-center;
   }
-
   .w-TextBox {
-    @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6;
+    @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6 text-[20px];
   }
-
   /* Featuers Section */
   .f-Container {
     @apply container px-5   mx-auto flex flex-wrap;
   }
-
   .f-ImageBox {
     @apply lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden;
   }
-
   .f-Image {
     @apply object-cover object-center  w-full;
   }
   .f-TextBox {
     @apply flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center;
   }
-
   .f-boxContainer {
     @apply flex flex-col mb-10 lg:items-start items-center;
   }
   .f-boxItems {
     @apply flex  items-center mb-3;
   }
-
   /* toptreding sectoin table */
   .tendingbg {
     background-image: url("./assets/trending.png");
   }
-
   .trendingParent {
     @apply mb-20 tendingbg md:px-20 flex flex-col items-center justify-center;
   }
-
   .tabelContainer {
     @apply bg-white2  shadow-md rounded-xl w-full p-4  overflow-auto;
   }
@@ -187,11 +159,9 @@
     color: #130f49;
     font-weight: 400;
   }
-
   .t-heading {
     @apply text-[48px] text-black font-bold mb-10 mt-[5rem];
   }
-
   .t-trStyleing {
     @apply border-b-[1px] border-lightBlue;
   }
@@ -201,7 +171,6 @@
   .t-token-name {
     @apply text-purple font-bold;
   }
-
   /* our services section  */
   .s-container {
     @apply bg-slati text-center md:py-[10rem]  pt-[8rem]  mt-[-10rem]  md:h-[95vh];
@@ -218,7 +187,6 @@
   .sr-images {
     @apply w-[18rem] h-[20rem] rounded-[30px] shadow-2xl object-fill !important;
   }
-
   /* partners  section*/
   .partner {
     background-image: url("./assets/partner.png");
@@ -232,7 +200,6 @@
   .p-imagesbox {
     @apply flex flex-wrap m-4 items-center justify-center gap-3 text-center;
   }
-
   /* get started section  */
   .start-container {
     @apply container px-5 py-24 mx-auto;
@@ -267,7 +234,6 @@
   .start-title {
     @apply custhead text-[2rem] font-bold  textindark;
   }
-
   /* effective section  */
   .effective {
     background-image: url("./assets/partner.png");
@@ -275,11 +241,9 @@
   .effectiveshadow {
     @apply custhead  effective text-[2rem] font-bold  textindark;
   }
-
   .effect-container {
     @apply container mx-auto flex px-5 py-5  md:flex-row flex-col items-center;
   }
-
   .effect-image {
     @apply lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0;
   }
@@ -289,7 +253,6 @@
   .effect-title {
     @apply custhead  sm:text-4xl text-[40px] mb-4 font-[700] textindark;
   }
-
   /* news letter  */
   .newsletter {
     background-image: url("./assets/bgnews.png");
@@ -301,12 +264,11 @@
     @apply container mx-auto flex px-5 py-5  md:flex-row flex-col items-center;
   }
   .news-flexcontainer {
-    @apply lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center;
+    @apply lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center text-[30px];
   }
   .news-leftbox {
     @apply flex  bg-white2  shadow-lg w-auto md:justify-center justify-center items-center rounded-full p-1  overflow-hidden;
   }
-
   .effect-input {
     @apply relative mr-1 lg:w-full  w-[100%];
   }
@@ -316,7 +278,6 @@
   .news-rightbox {
     @apply lg:max-w-lg  lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0;
   }
-
   /* footer section */
   .footer-flexcontainer {
     @apply container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center;
@@ -324,12 +285,10 @@
   .footer-links {
     @apply md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center;
   }
-
   /* create token page header section */
   .headersection {
     @apply bg-lightBlue  mt-5;
   }
-
   .hs-flexcontainer {
     @apply container mx-auto flex px-5   md:flex-row flex-col-reverse items-center;
   }
@@ -348,7 +307,121 @@
   .hs-image {
     @apply floatinghero object-cover object-center  w-[100%];
   }
-
+  /* createtokenform box */
+  .tcf-container {
+    @apply md:px-10 mb-9;
+  }
+  .tcf-wrap {
+    @apply mx-auto flex px-5 py-5  md:flex-row flex-col items-center;
+  }
+  .tcf-flexcontainer {
+    @apply lg:flex-grow   md:w-1/2  flex flex-col md:items-center  items-center text-center;
+  }
+  .tcf-form {
+    @apply flex flex-col  gap-10 text-left;
+  }
+  .tcf-imagbox {
+    @apply lg:max-w-lg  lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0;
+  }
+  .tcf-img {
+    @apply object-cover object-center rounded;
+  }
+  /* launchpad formbox section */
+  .lpf-heading {
+    @apply custhead  md:text-[48px] text-[40px] mb-4 font-[700] text-purple textindark;
+  }
+  .lpf-subheading {
+    @apply custhead mb-8 leading-relaxed text-[30px] font-medium text-blue textindark;
+  }
+  .lpf-right {
+    @apply flex flex-col  gap-2 items-center;
+  }
+  /* presale page */
+  .contri-container {
+    @apply flex flex-col gap-8  justify-center items-center  mt-10  md:mx-10 -mb-10;
+  }
+  /* serach component */
+  .ser-container {
+    @apply card flex flex-row justify-center items-center;
+  }
+  .ser-input {
+    @apply p-3 border border-blue rounded-full w-[50%];
+  }
+  .ser-select {
+    @apply border border-blue rounded-full p-3  ml-1;
+  }
+  /* card component */
+  .maincard {
+    @apply md:w-1/2 w-full mb-10 p-3;
+  }
+  .cardrounds {
+    /* card text issue */
+    @apply p-5  bg-cover py-5   border-none rounded-[30px] shadow-inner shadow-[cyan] sm:text-2xl  text-xl;
+  }
+  .cardtop {
+    @apply flex justify-center items-center;
+  }
+  .card-left {
+    @apply flex-1;
+  }
+  .cardoptions {
+    @apply flex flex-row gap-2;
+  }
+  .card-circle {
+    @apply text-center flex flex-col gap-5;
+  }
+  .cardsoftcap {
+    @apply flex flex-wrap gap-y-5 mb-10;
+  }
+  .capscontainer {
+    @apply flex flex-col justify-center items-center  w-1/2;
+  }
+  /* pooldetails page */
+  /* .pool-card {
+    @apply sm:text-3xl md:px-10 text-2xl  mt-9 flex flex-col justify-center items-center  mb-2 md:w-2/5;
+  } */
+  .pool-bottomright {
+    @apply sm:text-3xl md:px-10 text-2xl  mt-9 flex flex-col justify-center items-center  mb-2 md:w-2/5;
+  }
+  .pool-container {
+    @apply px-5 py-24 mx-auto flex flex-wrap;
+  }
+  .pool-left {
+    @apply sm:text-3xl text-2xl flex flex-col justify-center items-center  font-medium  mb-2 md:w-2/5;
+  }
+  .deadline {
+    @apply flex gap-3 mb-5;
+  }
+  .pool-left-text {
+    @apply text-left mt-2;
+  }
+  .leftpool-input {
+    @apply w-full  border-none  rounded-full text-base outline-none  py-1 px-3;
+  }
+  .pool-rightbox {
+    @apply md:w-3/5 md:p-5 herobggif createTokenformbox bg-cover border-none rounded-[30px] shadow-xl;
+  }
+  .pool-detailboxright {
+    @apply flex flex-1  gap-2 justify-center items-center;
+  }
+  .pool-detailflexbox {
+    @apply flex md:flex-row  flex-col justify-center items-center;
+  }
+  .pool-detailboxleft {
+    @apply flex flex-1 items-center;
+  }
+  .pool-detailtext {
+    @apply pl-5 md:py-0 py-5;
+  }
+  .poolbottomleft {
+    @apply md:w-3/5  w-full p-2  md:p-5 mt-4 overflow-hidden;
+  }
+  .pool-bottomimg {
+    @apply rounded-lg shadow-xl mb-7;
+  }
+  .pool-pie {
+    @apply text-[5px] text-white  p-10;
+  }
   /* inputs styling and labels */
   .InputStyle {
     @apply md:w-[30rem]  w-[20rem] p-2 rounded bg-inputcolor border-none;
@@ -360,7 +433,6 @@
   .createTokenformbox {
     @apply bg-cover border border-blue  shadow-lg  p-10 rounded-[30px];
   }
-
   /* pool details page */
   .tokenBox {
     @apply bg-lightBlue flex flex-row shadow-lg mb-5 md:w-full  w-full rounded-[10px] overflow-hidden;
@@ -368,7 +440,6 @@
   .presalmenu {
     @apply flex text-white  w-[7rem] p-2 rounded-full bg-slati;
   }
-
   /* dark theme styling  */
   /* //////////////////////////////////// */
   /* //////////////////////////////////// */
@@ -386,7 +457,6 @@
       shadow-[cyan]
     !important;
   }
-
   [data-theme="dark"] .whiteThemeLogo {
     @apply w-[180px] hidden;
   }
@@ -404,16 +474,13 @@
     width: 95%;
     margin: auto;
   }
-
   [data-theme="dark"] .partnershadow {
     @apply shadow-inner shadow-[cyan]  !important;
   }
   /* partner images */
-
   [data-theme="dark"] .partnerDark {
     @apply p-2  bg-[cyan] shadow-lg shadow-[cyan] rounded-lg     !important;
   }
-
   /* effecitet section */
   [data-theme="dark"] .effective {
     background-image: url("./assets/darkeffective.gif");
@@ -424,14 +491,12 @@
     width: 95%;
     margin: auto;
   }
-
   [data-theme="dark"] .effectiveshadow {
     @apply shadow-inner shadow-[cyan]    !important;
   }
   [data-theme="dark"] .darkImage {
     @apply inline object-cover object-center   !important;
   }
-
   [data-theme="dark"] .lightImg {
     @apply hidden !important;
   }
@@ -439,7 +504,6 @@
   [data-theme="dark"] .topUpTrending {
     @apply overflow-hidden  flex  items-center  rounded-[10px] w-[98%]  shadow-inner shadow-[cyan] mx-auto flex-col-reverse md:flex-row bg-slati p-2;
   }
-
   [data-theme="dark"] span {
     @apply text-white;
   }
@@ -453,11 +517,9 @@
   [data-theme="dark"] .heroHeading {
     @apply text-[30px]  md:text-[60px] leading-snug  font-bold text-white;
   }
-
   [data-theme="dark"] .btn {
     @apply text-white   bg-slati shadow-[cyan] shadow-inner border-0  py-3 px-6 focus:outline-none  text-center    !important;
   }
-
   [data-theme="dark"] .herobggif {
     background-image: url("./assets/herobg2.gif");
     background-repeat: no-repeat;
@@ -465,22 +527,17 @@
   [data-theme="dark"] .addShadow {
     @apply bg-cover   shadow-[darkcyan] shadow-lg;
   }
-
   [data-theme="dark"] .home {
     @apply bg-slati !important;
   }
-
   [data-theme="dark"] .textindark {
     @apply text-white;
   }
-
   /* why section */
   [data-theme="dark"] .why {
     @apply mt-[2rem] !important;
   }
-
   /* toptreding sectoin table */
-
   [data-theme="dark"] .tendingbg {
     background-image: url("./assets/herobg2.gif");
     background-size: cover;
@@ -490,15 +547,12 @@
     /* width: 95%; */
     /* margin: auto; */
   }
-
   [data-theme="dark"] .trendingParent {
     @apply mb-20  md:px-20 flex flex-col items-center justify-center;
   }
-
   [data-theme="dark"] .tabelContainer {
     @apply bg-slati  shadow-inner shadow-[darkcyan] rounded-xl w-full p-4  overflow-auto;
   }
-
   [data-theme="dark"] th {
     color: white;
     font-weight: 100;
@@ -507,13 +561,11 @@
     color: white;
     font-weight: 400;
   }
-
   /* newsletter */
   [data-theme="dark"] .newsletter {
     /* background-image: url("./assets/bgnews.png"); */
     background: #171717;
   }
-
   .subscribeBtn {
     @apply inline-flex text-white text-[16px] font-medium bg-slati border-0 py-2 px-6 focus:outline-none  rounded-full text-lg;
   }
@@ -521,45 +573,35 @@
   [data-theme="dark"] .createtoken {
     @apply bg-slati;
   }
-
   [data-theme="dark"] .headersection {
     @apply mt-5;
   }
-
   /* presale page */
   [data-theme="dark"] .preslae {
     @apply bg-slati;
   }
   /* vlock page */
-
   [data-theme="dark"] .saving {
     @apply bg-slati;
   }
-
   /* inputs styling and labels */
   [data-theme="dark"] .InputStyle {
     @apply md:w-[30rem]  w-[20rem] p-2 rounded bg-slati border-none shadow-inner shadow-[cyan];
   }
-
   [data-theme="dark"] .LabelStyle {
     @apply text-[20px] text-white font-medium !important;
   }
   /* formbox bg */
-
   [data-theme="dark"] .createTokenformbox {
     @apply bg-cover   shadow-inner shadow-[cyan]  p-10 rounded-[30px];
   }
-
   /* pool details page */
-
   [data-theme="dark"] .poolDetails {
     @apply bg-slati;
   }
-
   [data-theme="dark"] .tokenBox {
     @apply bg-slati flex flex-row shadow-inner shadow-[cyan] mb-5 md:w-full  w-full rounded-[10px] overflow-hidden;
   }
-
   [data-theme="dark"] .presalmenu {
     @apply flex text-white  w-[7rem] p-2 rounded-full bg-slati shadow-inner shadow-[cyan];
   }

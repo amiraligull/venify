@@ -26,13 +26,6 @@ const CircleProgressbar = ({
       >
         {percentage}%
       </div>
-
-      {/* <div
-            class="radial-progress text-green  text-[3rem] font-bold md:h-[15rem] md:w-[15rem] w-[10rem] h-[10rem] "
-            style={style}
-          >
-            70%
-          </div> */}
     </div>
   );
 };

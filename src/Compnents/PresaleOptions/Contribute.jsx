@@ -13,7 +13,7 @@ const Contribute = ({ MyLock, MyContribut }) => {
     <>
       <Container>
         {MyContribut && (
-          <div className="flex flex-col gap-8  justify-center items-center  mt-10  md:mx-10 -mb-10  ">
+          <div className="contri-container">
             <img src={listnot} alt={listnot} />
             <Typography
               text="Watch our intro video to learn more about us"
@@ -25,16 +25,10 @@ const Contribute = ({ MyLock, MyContribut }) => {
 
         {/* my lock section */}
         {MyLock && (
-          <div className="flex flex-col gap-8   justify-center items-center  mt-10  md:mx-10 -mb-10  ">
-            <p className="custhead text-center  text-[30px] font-medium text-blue textindark ">
-              My Locks
-            </p>
+          <div className="contri-container ">
+            <p className="lpf-subheading ">My Locks</p>
             <div class="p-3  md:w-2/3 flex md:flex-row flex-col items-center shadow-lg bg-slati  rounded-lg">
-              <img
-                alt="team"
-                class="w-16 h-16 bg-gray-100 object-cover object-center  rounded-full mr-4"
-                src={img}
-              />
+              <img alt="team" class="  rounded-full mr-4" src={img} />
               <div class=" flex-1 left">
                 <Typography text="HOLA WIN" weight="medium" color="white" />
                 <Typography
@@ -44,7 +38,6 @@ const Contribute = ({ MyLock, MyContribut }) => {
                   size="14px"
                 />
               </div>
-
               <div class=" right">
                 <Typography
                   text="Amount: 10.00BNB"
@@ -58,7 +51,6 @@ const Contribute = ({ MyLock, MyContribut }) => {
                 />
               </div>
             </div>
-
             <Link to="/">
               <Button text="Back to Home" />
             </Link>

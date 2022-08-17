@@ -8,7 +8,6 @@ import Footer from "../../Compnents/Footer/Footer";
 import { intro } from "../../Compnents/LoadImages";
 import Newsletter from "../../Compnents/Newsletter/Newsletter";
 import Tabs from "../../Compnents/Tabs/Tabs";
-// import BG from "../../assets/bg.png";
 const Presale = () => {
   return (
     <div className="preslae">
@@ -22,8 +21,6 @@ const Presale = () => {
       <Tabs title1="All Tokens" title2="My Contributions" />
       <Newsletter />
       <Footer />
-
-      {/* <img src={BG} alt={BG} className="absolute top-[50rem] w-[80%]	-z-1" /> */}
     </div>
   );
 };
